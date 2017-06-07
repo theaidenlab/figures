@@ -50,7 +50,7 @@
 
 		$(document).ready(function () {
 
-			var browser,
+			var browser_lynn,
 			reference;
 
 			reference =
@@ -60,9 +60,9 @@
 				cytobandURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/b37/b37_cytoband.txt"
 			};
 
-			browser = hic.createBrowser($('#app-container-Lynn'), { reference: reference });
+			browser_lynn = hic.createBrowser($('#app-container-Lynn'), { reference: reference });
 
-			browser.loadHicFile({
+			browser_lynn.loadHicFile({
 		         url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/untreated/unsynchronized/combined.hic",    //  url string or File object
 		         name: "HIC Rao Biorxiv CU"   //  display name for the map.  Optional, defaults to url
 		     });
