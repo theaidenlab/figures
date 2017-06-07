@@ -40,23 +40,33 @@
 <body id="home">
 
 
-<div id="app-container">
-<!-- Juicebox app will appear here -->
-</div>
+	<div id="app-container">
+		<!-- Juicebox app will appear here -->
+	</div>
 
 
-<script type="text/javascript">
-    $(document).ready(function () {
+	<script type="text/javascript">
 
-        var browser = hic.createBrowser($('#app-container'));
 
-        browser.loadHicFile({
-         url: "http://hicfiles.s3.amazonaws.com/hiseq/rpe1/DarrowHuntley-2015/del-Xa-combined.hic",    //  url string or File object
-         name: "del-Xa-combined"   //  display name for the map.  Optional, defaults to url
-  		})
+		$(document).ready(function () {
 
-    });
-</script>
+			var browser,
+			reference;
+
+			reference =
+			{
+				id: "hg19",
+				fastaURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/1kg_v37/human_g1k_v37_decoy.fasta",
+				cytobandURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/b37/b37_cytoband.txt"
+			};
+
+			browser = hic.createBrowser($('#app-container'), { reference: reference });
+
+			site.init(browser);
+		});
+
+
+	</script>
 
 </body>
 

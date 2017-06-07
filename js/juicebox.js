@@ -1895,7 +1895,9 @@ var hic = (function (hic) {
 
     // Set default values for config properties
     function setDefaults(config) {
-        config.showChromosomeSelector = true;
+        if (config.showChromosomeSelector === undefined) {
+            config.showChromosomeSelector = true;
+        }
     }
 
 
