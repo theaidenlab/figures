@@ -60,9 +60,9 @@
 				cytobandURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/b37/b37_cytoband.txt"
 			};
 
-			browser_kevin = hic_kevin.createBrowser($('#app-container'), { reference: reference });
+			browser_kevin = hic_kevin.createBrowser($('#app-container-kevin'), { reference: reference });
 
-			browser.loadHicFile({
+			browser_kevin.loadHicFile({
 		         url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/treated_6hr/unsynchronized/combined.hic",    //  url string or File object
 		         name: "Biorxiv 2017 Combined Treated"   //  display name for the map.  Optional, defaults to url
 		     });
