@@ -40,7 +40,7 @@
 <body id="home">
 
 
-	<div id="app-container">
+	<div id="app-container_Untreated">
 		<!-- Juicebox app will appear here -->
 	</div>
 
@@ -50,7 +50,7 @@
 
 		$(document).ready(function () {
 
-			var browser,
+			var browser_Untreated,
 			reference;
 
 			reference =
@@ -60,16 +60,54 @@
 				cytobandURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/b37/b37_cytoband.txt"
 			};
 
-			browser = hic.createBrowser($('#app-container'), { reference: reference });
+			browser = hic.createBrowser($('#app-container_Untreated'), { reference: reference });
 
 			browser.loadHicFile({
 		         url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/untreated/synchronized/combined.hic",    //  url string or File object
-		         name: "HIC001"   //  display name for the map.  Optional, defaults to url
+		         name: "Untreated"   //  display name for the map.  Optional, defaults to url
 		     });
 
 		});
 
+
+
 	</script>
+
+
+		<div id="app-container_treated6hr">
+		<!-- Juicebox app will appear here -->
+	</div>
+
+	<!--https://github.com/igvteam/juicebox.js/wiki/Getting-Started-->
+
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+
+			var browser_Untreated,
+			reference;
+
+			reference =
+			{
+				id: "hg19",
+				fastaURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/1kg_v37/human_g1k_v37_decoy.fasta",
+				cytobandURL: "https://s3.amazonaws.com/igv.broadinstitute.org/genomes/seq/b37/b37_cytoband.txt"
+			};
+
+			browser = hic.createBrowser($('#app-container_treated6hr'), { reference: reference });
+
+			browser.loadHicFile({
+		         url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/treated_6hr/unsynchronized/combined.hic",    //  url string or File object
+		         name: "treated6hr"   //  display name for the map.  Optional, defaults to url
+		     });
+
+		});
+
+
+
+	</script>
+
+
 
 </body>
 
