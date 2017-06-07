@@ -44,9 +44,9 @@
 		<!-- Juicebox app will appear here -->
 	</div>
 
+	<!--https://github.com/igvteam/juicebox.js/wiki/Getting-Started-->
 
 	<script type="text/javascript">
-
 
 		$(document).ready(function () {
 
@@ -62,9 +62,12 @@
 
 			browser = hic.createBrowser($('#app-container'), { reference: reference });
 
-			site.init(browser);
-		});
+			browser.loadHicFile({
+		         url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/untreated/synchronized/combined.hic",    //  url string or File object
+		         name: "HIC001"   //  display name for the map.  Optional, defaults to url
+		     });
 
+		});
 
 	</script>
 
