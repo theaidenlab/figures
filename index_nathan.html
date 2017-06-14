@@ -68,7 +68,7 @@
 
 			browser_Untreated = hic.createBrowser($('#app-container_Untreated'), { reference: reference });
 
-			browser.loadHicFile({
+			browser_Untreated.loadHicFile({
 		         url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/untreated/synchronized/combined.hic",    //  url string or File object
 		         name: "Untreated"   //  display name for the map.  Optional, defaults to url
 		     });
