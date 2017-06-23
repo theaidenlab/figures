@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>igv.js unit tests</title>
+
+    <link rel="stylesheet" href="vendor/qunit.css" type="text/css"/>
+    <script type="text/javascript" src="vendor/qunit.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- IGV JS -->
+    <script type="text/javascript" src="http://igv.org/web/beta/igv-beta.js"></script>
+
+    <!-- HiC JS -->
+
+    <script src="../site/js/site.js"></script>
+
+    <script src="../js/hicUtils.js"></script>
+    <script src="../js/hicReader.js"></script>
+    <script src="../js/hicColorScaleWidget.js"></script>
+    <script src="../js/hicLocusGoto.js"></script>
+    <script src="../js/hicResolutionSelector.js"></script>
+    <script src="../js/hicBrowser.js"></script>
+    <script src="../js/contactMatrixView.js"></script>
+    <script src="../js/hicRuler.js"></script>
+    <script src="../js/eventBus.js"></script>
+    <script src="../js/scrollbarWidget.js"></script>
+    <script src="../js/sweepZoom.js"></script>
+    <script src="../js/hicState.js"></script>
+    <script src="../js/hicDataset.js"></script>
+    <script src="../js/normalizationVector.js"></script>
+
+    <script src="testHiC.js"></script>
+    <script src="testColorScale.js"></script>
+
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        runColorTests();
+        runHiCTests();
+    });
+</script>
+</body>
+</html>

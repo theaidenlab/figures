@@ -24,37 +24,69 @@
 
 <html>
 <head>
-
     <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Aiden Lab - The Center for Genome Architecture - Baylor College of Medicine</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="6BslNt4JlshiKPJwQW8LtuX_BLTpolajuxCb06ht4Aw" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Juicebox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://aidenlab.org/favicon.ico">
 
-  <!-- stylesheets -->
-  <!--link rel="icon" type="image/png" href="favicon.ico"-->
+    <!-- Shims for legacy browsers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.js"></script>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/redmond/jquery-ui.css"/>
-  <link rel="stylesheet" href="https://igv.org/web/beta/igv-beta.css">
-  <link rel="stylesheet" href="css/juicebox.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.css"/>
 
-  <!-- Javascript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://igv.org/web/beta/igv-beta.min.js"></script>
-  <script src="js/juicebox.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <!--script src="../js/analytics.js"></script-->
+    <!-- JQuery UI CSS -->
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/redmond/jquery-ui.css"/>
 
+    <!-- IGV CSS -->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/beta/igv-beta.css">
+
+    <!-- site CSS -->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/test/site/css/site.css">
+
+    <!-- Juicebox CSS-->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/test/dist/juicebox-bootstrap.css">
+
+    <!-- Bootstrap-Select Plugin CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+    <!-- Underscore JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- JQuery UI JS -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Tether JS (Use with Alpha 4.0.0-alpha.6 Bootstrap) -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap-Select Plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
+
+    <!-- IGV JS-->
+    <script src="https://igv.org/web/beta/igv-beta.min.js"></script>
+
+    <!-- Site JS-->
+    <script src="https://igv.org/web/jb/test/site/js/site.js"></script>
+
+    <!-- Juicebox JS -->
+    <script src="https://igv.org/web/jb/test/dist/juicebox.js"></script>
 
 </head>
 
@@ -88,21 +120,55 @@
 
 
 <script type="text/javascript">
+
     $(document).ready(function () {
-        var browser1, browser2;
+
+        var browser1, browser2, browser3, browser4, browser5, browser6;
+
         browser1 = hic.createBrowser($('#app-container-1'), {
             miniMode: true,
             width: 480,
             height: 480,
             href: "?state=1%2C1%2C5%2C1197.4139535839602%2C1195.8952499749375%2C1.5770828867418905%2CNONE&colorScale=199&hicUrl=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Fhiseq%2Fgm12878%2Fin-situ%2Fcombined.hic&name=Rao%20and%20Huntley%20et%20al.%20%7C%20Cell%202014%20GM12878%20(human)%20in%20situ%20MboI%20primary%2Breplicate%20(4.9B)"
         });
+
         browser2 = hic.createBrowser($('#app-container-2'), {
             miniMode: true,
             width: 480,
             height: 480,
             href: "?state=2%2C2%2C5%2C2334.4701719047616%2C2273.517948095238%2C1.022829785420541%2CNONE&colorScale=57&hicUrl=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Fhiseq%2Fgm12878%2Fin-situ%2Fcombined.hic&name=Rao%20and%20Huntley%20et%20al.%20%7C%20Cell%202014%20GM12878%20(human)%20in%20situ%20MboI%20primary%2Breplicate%20(4.9B)"
         });
+
+        browser3 = hic.createBrowser($('#app-container-1'), {
+            miniMode: true,
+            width: 480,
+            height: 480,
+            href: "?state=1%2C1%2C5%2C1197.4139535839602%2C1195.8952499749375%2C1.5770828867418905%2CNONE&colorScale=199&hicUrl=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Fhiseq%2Fgm12878%2Fin-situ%2Fcombined.hic&name=Rao%20and%20Huntley%20et%20al.%20%7C%20Cell%202014%20GM12878%20(human)%20in%20situ%20MboI%20primary%2Breplicate%20(4.9B)"
+        });
+
+        browser4 = hic.createBrowser($('#app-container-1'), {
+            miniMode: true,
+            width: 480,
+            height: 480,
+            href: "?state=1%2C1%2C5%2C1197.4139535839602%2C1195.8952499749375%2C1.5770828867418905%2CNONE&colorScale=199&hicUrl=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Fhiseq%2Fgm12878%2Fin-situ%2Fcombined.hic&name=Rao%20and%20Huntley%20et%20al.%20%7C%20Cell%202014%20GM12878%20(human)%20in%20situ%20MboI%20primary%2Breplicate%20(4.9B)"
+        });
+
+        browser5 = hic.createBrowser($('#app-container-1'), {
+            miniMode: true,
+            width: 480,
+            height: 480,
+            href: "?state=1%2C1%2C5%2C1197.4139535839602%2C1195.8952499749375%2C1.5770828867418905%2CNONE&colorScale=199&hicUrl=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Fhiseq%2Fgm12878%2Fin-situ%2Fcombined.hic&name=Rao%20and%20Huntley%20et%20al.%20%7C%20Cell%202014%20GM12878%20(human)%20in%20situ%20MboI%20primary%2Breplicate%20(4.9B)"
+        });
+
+        browser6 = hic.createBrowser($('#app-container-1'), {
+            miniMode: true,
+            width: 480,
+            height: 480,
+            href: "?state=1%2C1%2C5%2C1197.4139535839602%2C1195.8952499749375%2C1.5770828867418905%2CNONE&colorScale=199&hicUrl=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Fhiseq%2Fgm12878%2Fin-situ%2Fcombined.hic&name=Rao%20and%20Huntley%20et%20al.%20%7C%20Cell%202014%20GM12878%20(human)%20in%20situ%20MboI%20primary%2Breplicate%20(4.9B)"
+        });
+
     });
+
 </script>
 
 </body>
