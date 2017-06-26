@@ -95,57 +95,27 @@
 
 	<div class="row">
 		<div class="row">
-			<div class="col-md-4">
-				<h1>Figure 2A Untreated Chr8</h1>
+			<div class="col-md-6">
+				<h1>Figure 3A Untreated Chr8</h1>
 				<br>
 				<div id="app-container-1">
 				</div>
 			</div>
-			<div class="col-md-4">
-	           <h1>Figure 2A Untreated Chr4</h1>
+			<div class="col-md-6">
+	           <h1>Figure 3A Treated Chr8</h1>
 	           <br>
                 <div id="app-container-3">
                 </div>
 	       </div>
-	       <div class="col-md-4">
-        		<h1>Figure 2A Untreated  Chr1</h1>
-                <br>
-                <div id="app-container-5">
-        	    </div>
-            </div>
-
 		</div>
 	</div>
 
-    <div class="row">
-	   <div class="row">
-	       <div class="col-md-4">
-				<h1>Figure 2A Treated 6hr Chr8</h1>
-				<br>
-				<div id="app-container-2">
-				</div>
-			</div>
-		   <div class="col-md-4">
-		      <h1>Figure 2A Treated 6hr Chr4</h1>
-              <br>
-		      <div id="app-container-4">
-		      </div>
-	       </div>
-
-	         <div class="col-md-4">
-            	<h1>Figure 2A Treated 6hr Chr1</h1>
-                <br>
-                <div id="app-container-6">
-                </div>
-            </div>
-        </div>
-    </div>
 
 <script type="text/javascript">
 
 	$(document).ready(function () {
 
-		var browser1, browser2, browser3, browser4, browser5, browser6;
+		var browser1, browser2
 
 		browser1 = hic.createBrowser($('#app-container-1'), {
 			miniMode: true,
@@ -160,35 +130,6 @@
 			height: 480,
 			href: "?state=8%2C8%2C8%2C26600.5812%2C26595.8524%2C2.5111870551139472%2CKR&colorScale=25&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
 		});
-
-		browser3 = hic.createBrowser($('#app-container-3'), {
-			miniMode: true,
-			width: 480,
-			height: 480,
-			href: "?state=4%2C4%2C8%2C8142.6612%2C8143.6552%2C2.460108022788369%2CKR&colorScale=50&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
-		});
-
-		browser4 = hic.createBrowser($('#app-container-4'), {
-			miniMode: true,
-			width: 480,
-			height: 480,
-			href: "?state=4%2C4%2C8%2C8142.6612%2C8143.6552%2C2.460108022788369%2CKR&colorScale=50&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
-		});
-
-		browser5 = hic.createBrowser($('#app-container-5'), {
-			miniMode: true,
-			width: 480,
-			height: 480,
-			href: "?state=1%2C1%2C8%2C18341.574%2C18345.1742%2C1.0574360012699833%2CKR&colorScale=30&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
-		});
-
-		browser6 = hic.createBrowser($('#app-container-6'), {
-			miniMode: true,
-			width: 480,
-			height: 480,
-			href: "?state=1%2C1%2C8%2C18341.574%2C18345.1742%2C1.0574360012699833%2CKR&colorScale=30&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
-		});
-
 	});
 
 </script>
