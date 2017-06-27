@@ -169,11 +169,10 @@
 		};
 		browser3 = hic.createBrowser($('#app-container-3'), custom3);
 
-		$('.container3').resizable({
-	        resize: function () {
-	            custom3.width = $(container3).width();
-	        }
-	    });
+	    $(window).resize(function () {
+	    	
+		    $('#app-container-3').width($(container3).width())
+		});
 
 
 		browser4 = hic.createBrowser($('#app-container-4'), {
