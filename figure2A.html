@@ -92,53 +92,71 @@
 
 <body style="margin:30px">
 
+	<h1 style="text-align: center;">Figure 2A</h1>
 
 	<div class="row">
 		<div class="row">
+			<div class="col-md-2">
+				<div id="untreated">
+					<img class="img-responsive center-block" src="/css/img/fig2A_Untreated.png" alt="Untreated" width="200" height="220">
+				</div>
+			</div>
+			<div class="col-md-10">
 			<div class="col-md-4">
-				<h1>Figure 2A Untreated Chr8</h1>
-				<br>
 				<div id="app-container-1">
 				</div>
 			</div>
-			<div class="col-md-4" id="container3">
-	           <h1>Figure 2A Untreated Chr4</h1>
-	           <br>
+			<div class="col-md-4">
                 <div id="app-container-3">
                 </div>
 	       </div>
 	       <div class="col-md-4">
-        		<h1>Figure 2A Untreated  Chr1</h1>
-                <br>
                 <div id="app-container-5">
         	    </div>
             </div>
-
+            </div>
 		</div>
 	</div>
-
+	<br>
     <div class="row">
 	   <div class="row">
+	   	   <div class="col-md-2">
+				<div id="untreated">
+					<img class="img-responsive center-block" src="/css/img/fig2A_Treated6hr.png" alt="Untreated"
+					width="200" height="220">
+				</div>
+		   </div>
+		   <div class="col-md-10">
 	       <div class="col-md-4">
-				<h1>Figure 2A Treated 6hr Chr8</h1>
-				<br>
 				<div id="app-container-2">
 				</div>
 			</div>
 		   <div class="col-md-4">
-		      <h1>Figure 2A Treated 6hr Chr4</h1>
-              <br>
 		      <div id="app-container-4">
 		      </div>
 	       </div>
 
 	         <div class="col-md-4">
-            	<h1>Figure 2A Treated 6hr Chr1</h1>
-                <br>
                 <div id="app-container-6">
                 </div>
             </div>
+            </div>
         </div>
+    </div>
+
+    <div class="row">
+        <div class="row">
+        	
+          
+        </div>
+    </div>
+    <br>
+    <div>
+    	<p style="text-align: center;">APA matrices for all loop domains >300kb long in Hi-C maps for untreated cells (top) versus in 
+Hi-C maps for treated cells (bottom).APA scores are indicated in the lower left corner of each 
+matrix. The color scale for both matrices ranges from 0 (white) to five times the mean of the 6x6 
+box in the upper right corner of the matrix (red). The APA score after auxin treatment shows 
+complete loss of loop signal (APA score <=1), and no focal enrichment is visible. </p>
     </div>
 
 <script type="text/javascript">
@@ -146,50 +164,47 @@
 	$(document).ready(function () {
 
 		var browser1, browser2, browser3, browser4, browser5, browser6;
+		var windowSize=380
 
 		browser1 = hic.createBrowser($('#app-container-1'), {
 			miniMode: true,
-			width: $(container3).width(),
-			height: $(container3).width(),
+			width: windowSize,
+			height: windowSize,
 			href: "?state=8%2C8%2C8%2C26600.581227078823%2C26595.852454564872%2C2.511187643647933%2CKR&colorScale=25&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
 		});
 
 		browser2 = hic.createBrowser($('#app-container-2'), {
 			miniMode: true,
-			width: $(container3).width(),
-			height: $(container3).width(),
-			href: "?state=8%2C8%2C8%2C26600.5812%2C26595.8524%2C2.5111870551139472%2CKR&colorScale=25&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
+			width: windowSize,
+			height: windowSize,
+			href: "?state=8%2C8%2C8%2C26600.5812%2C26595.8524%2C2.5111870551139472%2CNONE&colorScale=25&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
 		});
 
 		browser3 = hic.createBrowser($('#app-container-3'), {
 			miniMode: true,
-			width: $(container3).width(),
-			height: $(container3).width(),
+			width: windowSize,
+			height: windowSize,
 			href: "?state=4%2C4%2C8%2C8142.6612%2C8143.6552%2C2.460108022788369%2CKR&colorScale=50&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
 		});
 
-	    //$(window).resize(function () {
-	    //	$('#app-container-3').width($(container3).width())
-		//});
-
 		browser4 = hic.createBrowser($('#app-container-4'), {
 			miniMode: true,
-			width: $(container3).width(),
-			height: $(container3).width(),
+			width: windowSize,
+			height: windowSize,
 			href: "?state=4%2C4%2C8%2C8142.6612%2C8143.6552%2C2.460108022788369%2CKR&colorScale=50&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
 		});
 
 		browser5 = hic.createBrowser($('#app-container-5'), {
 			miniMode: true,
-			width: $(container3).width(),
-			height: $(container3).width(),
+			width: windowSize,
+			height: windowSize,
 			href: "?state=1%2C1%2C8%2C18341.574%2C18345.1742%2C1.0574360012699833%2CKR&colorScale=30&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
 		});
 
 		browser6 = hic.createBrowser($('#app-container-6'), {
 			miniMode: true,
-			width: $(container3).width(),
-			height: $(container3).width(),
+			width: windowSize,
+			height: windowSize,
 			href: "?state=1%2C1%2C8%2C18341.574%2C18345.1742%2C1.0574360012699833%2CKR&colorScale=30&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
 		});
 
