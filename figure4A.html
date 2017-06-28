@@ -95,29 +95,6 @@
 	<h1 style="text-align: center; font:Helvetica Neue;font-size:36px;line-height: 40px; color: #333333
 ">Figure 4A</h1>
 
-		<div class="row" id="imgDiv">
-			<div class="col-md-6">
-				<img class="img-responsive" src="css/img/fig4AUntreated.png" alt="Untreated">
-			</div>
-			<div class="col-md-6">
-				<img class="img-responsive" src="css/img/fig4ATreated6hr.png" alt="Treated">
-			</div>
-		</div>
-
-	<br>
-	
-		<div class="row">
-			<div class="col-md-6" id="container1">
-				<div id="app-container-1">
-				</div>
-			</div>
-	       <div class="col-md-6">
-                <div id="app-container-2">
-        	    </div>
-            </div>
-		</div>
-
-	<br>
 		<div>    	
 			<p class="legend">
 				Examples of a network of intra- and interchromosomal cohesin-independent links between	
@@ -129,7 +106,19 @@
 				interchromosomal matrices.
 			</p>
 		</div>
-    
+
+		<div class="row">
+			<div class="col-md-6" id="container1">
+				<p style="text-align:center"> <img class="img-responsive" src="css/img/fig4AUntreated.png" alt="Untreated"></p>
+				<div id="app-container-1">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<p style="text-align:center"> <img class="img-responsive" src="css/img/fig4ATreated6hr.png" alt="Treated"> </p>
+				<div id="app-container-2">
+        	    </div>
+			</div>
+		</div>
 
     <style type="text/css">
    
@@ -139,13 +128,15 @@
 	.legend {
 			text-align:center; 
 			font:Helvetica Neue;
-			font-size:36; 
-			px color: #333333;
+			font-size:16px; 
+			color: #333333;
 	}
-	#imgDiv {
+	.img-responsive {
 		display: inline-flex;
 		flex-direction: row;
   		justify-content: center;
+		width: 200px;
+		height: 80px;
 	}
 
     </style>
