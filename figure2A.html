@@ -99,7 +99,7 @@
 	
 		<div class="row">
 			<div class="col-md-2">
-				<div id="legen">
+				<div id="label">
 					<img class="img-responsive" src="css/img/fig2AUntreated.png" alt="Untreated">
 				</div>
 			</div>
@@ -108,7 +108,7 @@
 				<div id="app-container-1">
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4" id="container3">
                 <div id="app-container-3">
                 </div>
 	       </div>
@@ -123,7 +123,7 @@
     
 	   <div class="row">
 	   	   <div class="col-md-2">
-				<div id="legend">
+				<div id="label">
 					<img class="img-responsive" src="css/img/fig2ATreated6hr.png" alt="Untreated">
 				</div>
 		   </div>
@@ -145,11 +145,7 @@
         </div>
     	<br>
     <div>
-    	<p style="text-align: center;">APA matrices for all loop domains >300kb long in Hi-C maps for untreated cells (top) versus in 
-Hi-C maps for treated cells (bottom).APA scores are indicated in the lower left corner of each 
-matrix. The color scale for both matrices ranges from 0 (white) to five times the mean of the 6x6 
-box in the upper right corner of the matrix (red). The APA score after auxin treatment shows 
-complete loss of loop signal (APA score <=1), and no focal enrichment is visible. </p>
+    	<p id="legend">Contact matrices show that loop domains in untreated HCT-116-RAD21-mAC cells (top) disappear after auxin treatment (bottom). Three representative loci are shown (at 10kb resolution): chr8:133.8-134.6Mb (left), chr4:40.8-42.1Mb (middle) and chr1:91.9-95.8Mb (right). </p>
     </div>
 
     <style type="text/css">
@@ -158,7 +154,13 @@ complete loss of loop signal (APA score <=1), and no focal enrichment is visible
     display: flex;
 	}
 	.legend {
-	
+			text-align:center; 
+			font:Helvetica Neue;
+			font-size:36; 
+			px color: #333333;
+	}
+	.label{
+
 	}
 	.col-md-2 {
 		display: inline-flex;
@@ -174,7 +176,7 @@ complete loss of loop signal (APA score <=1), and no focal enrichment is visible
 	$(document).ready(function () {
 
 		var browser1, browser2, browser3, browser4, browser5, browser6;
-		var windowSize=320
+		var windowSize=$(container3).width()
 
 		browser1 = hic.createBrowser($('#app-container-1'), {
 			miniMode: true,
