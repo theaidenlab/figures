@@ -101,11 +101,14 @@
   		</div>
 		<br>
 		<div class="row">
-			<div class="col-md-4">
-				<div>
-                                	<p style="font-size:20px" class="panelID">A</p>
-                        	</div>
-				<br>
+			<div class="col-md-12">
+				<div> 
+					<p style="font-size:30px" class="panelID">A</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<div>
 					<img class="img-responsive" src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2A_untreated_header.png" alt="Untreated" width="400">
 				</div>
@@ -113,12 +116,14 @@
 					<div id="app-container-1">
                                 </div>
 				<br>
+					<div id="app-container-3">
+                                </div>
+                                <br>
+					<div id="app-container-5">
+                                </div>
+                                <br>
 			</div>
-			<div class="col-md-4">
-				<div>
-                                	<p style="font-size:20px" class="panelID"> </p>
-                        	</div>
-				<br>
+			<div class="col-md-6">
 				<div>
                                         <img class="img-responsive" src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2A_treated_header.png" alt="6hr Auxin Treated" width="400">
 				</div>
@@ -126,56 +131,43 @@
                                         <div id="app-container-2">
                                 </div>
                                 <br>
-			</div>
-			<div class="col-md-4">
-				<div>
-                                        <p style="font-size:20px" class="panelID">B</p>
+					<div id="app-container-4">
                                 </div>
-				<br>
-				<div> 
-					<img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2B_APA_timecourse.png" alt="APA timecourse" width="600">
-				</div>
+                                <br>
+					<div id="app-container-6">
+                                </div>
+                                <br>
 			</div>
 	       </div>
 	       <div class="row">
-			<div class="col-md-4">
-					<div id="app-container-3">
-				</div>
-				<br>
-			</div>
-			<div class="col-md-4">
-                                        <div id="app-container-4">
+			<div class="col-md-12">
+				<div>
+                                        <p style="font-size:30px" class="panelID">B</p>
                                 </div>
                                 <br>
-			</div>
-			<div class="col-md-4">
-			<div>
-				<p style="font-size:20px" class="panelID">C</p>
-			</div>
-			<br>
-			<div>
-				<img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2C_loopdomain_recovery.png" alt="loopdomain recovery" width="300">
-			</div>
+                                <div>
+                                        <img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2B_APA_timecourse.png" alt="APA timecourse" width="1000">
+                                </div>
+				<br>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
-					<div id="app-container-5">
-                                </div>
-                                <br>
+			<div class="col-md-6">
+			<div>
+				<p style="font-size:30px" class="panelID">C</p>
 			</div>
-			<div class="col-md-4">
-                                        <div id="app-container-6">
-                                </div>
-                                <br>
-                        </div>
-			<div class="col-md-4">
+			<br>
+			<div>
+				<img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2C_loopdomain_recovery.png" alt="loopdomain recovery" width="400">
+			</div>
+			</div>
+			<div class="col-md-6">
                         <div>
-                                <p style="font-size:20px" class="panelID">D</p>
+                                <p style="font-size:30px" class="panelID">D</p>
                         </div>
                         <br>
                         <div>
-                                <img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2D_recovery_vs_features.png" alt="recovery vs features" width="400">
+                                <img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2D_recovery_vs_features.png" alt="recovery vs features" width="600">
                         </div>
                         </div>
 		</div>
@@ -214,7 +206,7 @@
 $(document).ready(function () {
 
         var browser1, browser2, browser3, browser4, browser5, browser6;
-        var windowSize = 445;
+        var windowSize = 600;
 
 
         hic.loadDataset({
