@@ -124,11 +124,18 @@
                                 </div>
                                 <br>
 			</div>
-			<div class="col-md-4">
-                                        <div id="app-container-5">
+			<div class="col-md-3">
+					<div id="app-container-5">
+				</div>
+                                <br>
+                                        <div id="app-container-6">
                                 </div>
                                 <br>
-					<div id="app-container-6">
+			<div class="col-md-4">
+                                        <div id="app-container-7">
+                                </div>
+                                <br>
+					<div id="app-container-8">
                                 </div>
                                 <br>
 			</div>
@@ -158,7 +165,7 @@
 
 $(document).ready(function () {
 
-        var browser1, browser2, browser3, browser4, browser5, browser6;
+        var browser1, browser2, browser3, browser4, browser5, browser6, browser7, browser8;
         var windowSize = 445;
 
 
@@ -170,32 +177,41 @@ $(document).ready(function () {
 
                     browser1 = hic.createBrowser($('#app-container-1'), {
                         miniMode: true,
-                        width: 100,
+                        width: 150,
                         height: windowSize,
                         dataset: dataset,
-                        href: "?state=8%2C2%2C8%2C26760%2C26760%2C2.44%2CKR&colorScale=42&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
+                        href: "?state=2%2C6%2C4%2C21800%2C1430%2C2.05%2CKR&colorScale=28&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
                     });
 
                     browser3 = hic.createBrowser($('#app-container-3'), {
 
                         miniMode: true,
-                        width: 100,
+                        width: 150,
                         height: windowSize,
                         dataset: dataset,
-                        href: "?state=4%2C4%2C7%2C4080%2C4080%2C3%2CKR&colorScale=114&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
+                        href: "?state=4%2C6%2C4%2C290%2C1430%2C3%2.05CKR&colorScale=28&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
                     });
 
                     browser5 = hic.createBrowser($('#app-container-5'), {
                         miniMode: true,
+                        width: 250,
+                        height: windowSize,
+                        dataset: dataset,
+                        href: "?state=6%2C6%2C5%2C250%2C1430%2C1.025%2CKR&colorScale=20&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
+                    });
+
+		    browser7 = hic.createBrowser($('#app-container-7'), {
+                        miniMode: true,
                         width: windowSize,
                         height: windowSize,
                         dataset: dataset,
-                        href: "?state=1%2C1%2C7%2C9190%2C9190%2C1%2CKR&colorScale=111&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
+                        href: "?state=6%2C6%2C5%2C1430%2C1430%2C1.025%2CKR&colorScale=160&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
                     });
 
                     if(browser2) hic.syncBrowsers([browser1, browser2]);
                     if(browser4) hic.syncBrowsers([browser3, browser4]);
                     if(browser6) hic.syncBrowsers([browser5, browser6]);
+		    if(browser8) hic.syncBrowsers([browser7, browser8]);
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -207,18 +223,18 @@ hic.loadDataset({
                 .then(function (dataset) {
                     browser2 = hic.createBrowser($('#app-container-2'), {
                         miniMode: true,
-                        width: 100,
+                        width: 150,
                         height: windowSize,
                         dataset: dataset,
-                        href: "?state=8%2C8%2C8%2C26760%2C26760%2C2.44%2CKR&colorScale=38&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
+                        href: "?state=2%2C6%2C4%2C1800%2C1430%2C2.05%2CKR&colorScale=28&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
                     });
 
                     browser4 = hic.createBrowser($('#app-container-4'), {
                         miniMode: true,
-                        width: 100,
+                        width: 150,
                         height: windowSize,
                         dataset: dataset,
-                        href: "?state=4%2C4%2C8%2C4080%2C4080%2C3%2CKR&colorScale=111&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
+                        href: "?state=4%2C6%2C4%2C290%2C1430%2C2.05%2CKR&colorScale=28&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
                     });
 
                     browser6 = hic.createBrowser($('#app-container-6'), {
@@ -226,13 +242,21 @@ hic.loadDataset({
                         width: windowSize,
                         height: windowSize,
                         dataset: dataset,
-                        href: "?state=1%2C1%2C7%2C9190%2C9190%2C1%2CKR&colorScale=107&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
+                        href: "?state=6%2C6%2C5%2C250%2C1430%2C1.025%2CKR&colorScale=20&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
                     });
+		    
+		    browser8 = hic.createBrowser($('#app-container-8'), {
+                        miniMode: true,
+                        width: windowSize,
+                        height: windowSize,
+                        dataset: dataset,
+                        href: "?state=6%2C6%2C5%2C1430%2C1430%2C1.025%2CKR&colorScale=160&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
+		    });
 
                     if(browser1) hic.syncBrowsers([browser1, browser2]);
                     if(browser3) hic.syncBrowsers([browser3, browser4]);
                     if(browser5) hic.syncBrowsers([browser5, browser6]);
-
+		    if(browser7) hic.syncBrowsers([browser7, browser8]);
                 })
                 .catch(function (error) {
                     console.log(error);
