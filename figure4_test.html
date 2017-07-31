@@ -108,30 +108,24 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
-				<div>
-					<img class="img-responsive" src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2A_untreated_header.png" alt="Untreated" width="400">
+			<div class="col-md-2">
+					<div id="app-container-1">
 				</div>
 				<br>
-					<div id="app-container-1">
+					<div id="app-container-2">
                                 </div>
-				<br>
+                                <br>	
+			</div>
+			<div class="col-md-2">
 					<div id="app-container-3">
                                 </div>
-                                <br>
-					<div id="app-container-5">
+				<br>
+					<div id="app-container-4">
                                 </div>
                                 <br>
 			</div>
 			<div class="col-md-4">
-				<div>
-                                        <img class="img-responsive" src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2A_treated_header.png" alt="6hr Auxin Treated" width="400">
-				</div>
-				<br>
-                                        <div id="app-container-2">
-                                </div>
-                                <br>
-					<div id="app-container-4">
+                                        <div id="app-container-5">
                                 </div>
                                 <br>
 					<div id="app-container-6">
@@ -176,7 +170,7 @@ $(document).ready(function () {
 
                     browser1 = hic.createBrowser($('#app-container-1'), {
                         miniMode: true,
-                        width: windowSize,
+                        width: 100,
                         height: windowSize,
                         dataset: dataset,
                         href: "?state=8%2C2%2C8%2C26760%2C26760%2C2.44%2CKR&colorScale=42&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
@@ -185,7 +179,7 @@ $(document).ready(function () {
                     browser3 = hic.createBrowser($('#app-container-3'), {
 
                         miniMode: true,
-                        width: windowSize,
+                        width: 100,
                         height: windowSize,
                         dataset: dataset,
                         href: "?state=4%2C4%2C7%2C4080%2C4080%2C3%2CKR&colorScale=114&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
@@ -213,7 +207,7 @@ hic.loadDataset({
                 .then(function (dataset) {
                     browser2 = hic.createBrowser($('#app-container-2'), {
                         miniMode: true,
-                        width: windowSize,
+                        width: 100,
                         height: windowSize,
                         dataset: dataset,
                         href: "?state=8%2C8%2C8%2C26760%2C26760%2C2.44%2CKR&colorScale=38&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
@@ -221,7 +215,7 @@ hic.loadDataset({
 
                     browser4 = hic.createBrowser($('#app-container-4'), {
                         miniMode: true,
-                        width: windowSize,
+                        width: 100,
                         height: windowSize,
                         dataset: dataset,
                         href: "?state=4%2C4%2C8%2C4080%2C4080%2C3%2CKR&colorScale=111&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
