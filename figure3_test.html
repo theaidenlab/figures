@@ -96,10 +96,6 @@
 	<h1 style="text-align: center; font:Helvetica Neue;font-size:36px;line-height: 40px; color: #333333
 ">Figure 3</h1>
 
-		<div>    	
-  		<p class="legend">Contact matrices show that loop domains in untreated HCT-116-RAD21-mAC cells (top) disappear after auxin treatment (bottom). Three representative loci are shown (at 10kb resolution): chr8:133.8-134.6Mb (left), chr4:40.8-42.1Mb (middle) and chr1:91.9-95.8Mb (right). </p>
-  		</div>
-		<br>
 		<div class="row">
 			<div class="col-md-8">
 				<div> 
@@ -235,14 +231,31 @@
                                 <br>
                         </div>	
 		</div>
-    
+   		<br>
+		<div>    	
+  			<p class="legend">(A) Contact matrices of chromosome 8 at 500kb resolution. The plaid pattern in the Hi-C map is preserved after auxin treatment, indicating that the genome compartments still form.</p>
+  		</div>
+		<div>
+			<p class="legend">(B) Strength of contact domains called in untreated cells versus random intervals measured using the corner score (see Methods) in untreated (top) and treated cells (middle). Contact domain strength is significantly reduced, but does not disappear. The remaining signal in treated cells comes from compartment domains (contact domains where both boundaries of the domain are also boundaries of a compartment interval), which are preserved after cohesin loss (bottom). Contact domains where both boundaries are contained completely inside a compartment interval (‘other domains’) show corner scores in treated cells comparable to random pixels.</p>
+		</div>
+		<div>
+			<p class="legend">(C,D) Examples (C: chr21:32.4-39Mb and D: chr1:167-177Mb) showing that the loss of cohesin-associated loops after auxin treatment results in increased fine-scale compartmentalization. Top: Sliding correlation scores; valleys imply strong differences in long-range contact pattern observed at a locus as compared to neighboring loci, indicating a change in compartment (see Methods). Middle: Observed contact matrices. Bottom: Pearson’s correlation maps for the local region shown (see Methods). Deeper valleys in the sliding correlation score and increased plaid patterning in the observed and Pearson’s correlation maps indicate strengthened fine-scale compartment interactions after auxin treatment. Blowouts: loss of a loop domain results in strengthening of a compartment boundary spanned by the loop. Blown-out regions are indicated on zoomed out maps for both the observed (black upper triangle) and Pearson’s correlation maps (white rectangle). Observed and Pearson’s correlation maps are both shown at 25kb resolution for the zoomed out matrices and 10kb and 25kb resolution respectively for the blown-out matrices.</p>
+		</div>
+		<div>
+			<p class="legend">(E) Sliding correlation scores before and after auxin treatment for compartment boundaries which either coincide with loop domain anchors (left) or are located in the interior of a loop domain (right). For compartment boundaries that lie in the interior of a loop domain in untreated cells, the difference in long-range contact pattern on opposite sides of the boundary increases greatly after cohesin treatment.</p>
+		</div>
+		<div>
+			<p class="legend">(F) Sliding correlation scores before and after auxin treatment for H3K27ac boundaries in untreated cells which either coincide with loop domain anchors (left) or are located in the interior of a loop domain (right). H3K27Ac modification patterns are unchanged after auxin treatment (top and middle). For H3K27ac boundaries that lie in the interior of a loop domain in untreated cells, the difference in long-range contact pattern on opposite sides of the boundary increases greatly after cohesin treatment. This indicates that loop domains facilitate mixing of chromatin with different histone modifications.</p>
+		</div>
+
+		 
     <style type="text/css">
    
     .row {
     display: flex;
 	}
 	.legend {
-			text-align:center; 
+			text-align:left; 
 			font:Helvetica Neue;
 			font-size:36; 
 			px color: #333333;
