@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
   ~  The MIT License (MIT)
@@ -25,225 +24,248 @@
 
 <html>
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Juicebox</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" type="image/png" href="https://aidenlab.org/favicon.ico">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Juicebox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" href="https://aidenlab.org/favicon.ico">
 
-	<!-- Shims for legacy browsers -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.js"></script>
+    <!-- Shims for legacy browsers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.js"></script>
 
-	<!-- DataTables CSS -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.css"/>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.css"/>
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<!-- Font Awesome CSS-->
-	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-	<!-- JQuery UI CSS -->
-	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/redmond/jquery-ui.css"/>
+    <!-- JQuery UI CSS -->
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/redmond/jquery-ui.css"/>
 
-	<!-- IGV CSS -->
-	<link rel="stylesheet" type="text/css" href="https://igv.org/web/beta/igv-beta.css">
+    <!-- IGV CSS -->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/beta/igv-beta.css">
 
-	<!-- site CSS -->
-	<link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/test/site/css/site.css">
+    <!-- site CSS -->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/test/site/css/site.css">
 
-	<!-- Juicebox CSS-->
-	<link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/test/dist/juicebox-bootstrap.css">
+    <!-- Juicebox CSS-->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/test/dist/juicebox-bootstrap.css">
 
-	<!-- Bootstrap-Select Plugin CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <!-- Bootstrap-Select Plugin CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 
-	<!-- Underscore JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!-- Underscore JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 
-	<!-- JQuery JS -->
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-	<!-- JQuery UI JS -->
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- JQuery UI JS -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
-	<!-- Tether JS (Use with Alpha 4.0.0-alpha.6 Bootstrap) -->
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
+    <!-- Tether JS (Use with Alpha 4.0.0-alpha.6 Bootstrap) -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
 
-	<!-- Bootstrap JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<!-- Bootstrap-Select Plugin JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <!-- Bootstrap-Select Plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 
-	<!-- DataTables JS -->
-	<script src="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
 
-	<!-- IGV JS-->
-	<script src="https://igv.org/web/beta/igv-beta.min.js"></script>
+    <!-- IGV JS-->
+    <script src="https://igv.org/web/beta/igv-beta.min.js"></script>
 
-	<!-- Site JS-->
-	<script src="https://igv.org/web/jb/test/site/js/site.js"></script>
+    <!-- Site JS-->
+    <script src="https://igv.org/web/jb/test/site/js/site.js"></script>
 
-	<!-- Juicebox JS -->
-	<script src="https://igv.org/web/jb/test/dist/juicebox.js"></script>
+    <!-- Juicebox JS -->
+    <script src="https://igv.org/web/jb/test/dist/juicebox.js"></script>
 
 </head>
 
 <body style="margin:30px">
 
-	<h1 style="text-align: center; font:Helvetica Neue;font-size:36px;line-height: 40px; color: #333333
+<h1 style="text-align: center; font:Helvetica Neue;font-size:36px;line-height: 40px; color: #333333
 ">Figure 4</h1>
 
-		<div class="row">
-			<div class="col-md-12">
-				<div> 
-					<p style="font-size:30px" class="panelID">A</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-1">
-				<div>
-                                        <img class="img-responsive" src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4A_untreated_header.png" alt="Untreated" width="100">
-                                </div>
-                                <br>
-			</div>
-			<div class="col-md-2">
-					<div id="app-container-1">
-				</div>
-				<br>
-			</div>
-			<div class="col-md-2">
-					<div id="app-container-3">
-                                </div>
-				<br>
-			</div>
-			<div class="col-md-3">
-					<div id="app-container-5">
-				</div>
-                                <br>
-			</div>
-			<div class="col-md-4">
-                                        <div id="app-container-7">
-                                </div>
-                                <br>
-			</div>
-	       </div>
-	       <div class="row">
-			<div class="col-md-1">
-                                <div>
-                                        <img class="img-responsive" src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4A_treated_header.png" alt="6hr Auxin treated" width="100">
-                                </div>
-                                <br>
-                        </div>	
-			<div class="col-md-2">
-                                        <div id="app-container-2">
-                                </div>
-                                <br>
-                        </div>
-                        <div class="col-md-2">
-                                        <div id="app-container-4">
-                                </div>
-                                <br>
-                        </div>
-                        <div class="col-md-3">
-                                        <div id="app-container-6">
-                                </div>
-                                <br>
-			</div>
-                        <div class="col-md-4">
-                                        <div id="app-container-8">
-                                </div>
-                                <br>
-                        </div>
-               </div>
-	       <div class="row">
-			<div class="col-md-4">
-				<div>
-                                        <p style="font-size:30px" class="panelID">B</p>
-                                </div>
-				<br>
-				<div> 
-					<img src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4B_loop_lengths.png" alt="loop lengths" width="300">
-				</div>
-				<br>
-			</div>
-			<div class="col-md-8">
-				<div> 
-					<p style="font-size:30px" class="panelID">D</p>
-				</div>
-				<br>
-				<div>
-					<img src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4D_SE_enrichment.png" alt="SE enrichments" width="600">
-				</div>
-				<br>
-			</div>
-		</div>
-		<div class="row">
-                        <div class="col-md-4">
-                                <div>
-                                        <p style="font-size:30px" class="panelID">C</p>
-                                </div>
-                                <br>
-                                <div> 
-                                        <img src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4C_CTCF_orientations.png" alt="CTCF_orientations" width="300">
-                                </div>
-                                <br>
-                        </div>
-                        <div class="col-md-8">
-                                <div> 
-                                        <p style="font-size:30px" class="panelID">E</p>
-                                </div>
-                                <br>
-                                <div>
-                                        <img src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4E_timecourse_APA.png" alt="timecourse APA" width="600">
-                                </div>
-                                <br>
-                        </div>
-                </div>
-		<br>
-		<div>    	
-  			<p class="legend">(A) Examples of a network of intra- and interchromosomal cohesin-independent links between superenhancers on chr6, chr4, and chr2. H3K27 acetylation does not change with auxin treatment, but cohesin-independent links are significantly strengthened upon treatment. Intrachromosomal matrices are shown at 25kb (on-diagonal) and 50kb (off-diagonal) resolutions; interchromosomal matrices are shown at 100kb resolution. Maximum color intensities are 28 reads for the offdiagonal intrachromosomal matrices and 20 reads for the interchromosomal matrices.</p>
-  		</div>
-		<div>
-			<p class="legend">(B) Length distribution of cohesin-mediated loops (green) versus cohesin-independent loops (blue). </p>
-		</div>
-		<div>
-			<p class="legend">(C) CTCF binding patterns at cohesin-associated (top) versus cohesin-independent loop anchors (bottom). Only cohesin-associated loops obey the convergent rule. </p>
-		</div>
-		<div>
-			<p class="legend">(D) Percent of cohesin-independent loop anchors bound versus fold enrichment for 36 DNA-binding proteins and histone modifications. Superenhancers are strongly enriched at cohesin-independent loop anchors.</p>
-		</div>
-		<div>
-			<p class="legend">(E) APA for intrachromosomal (blue) and interchromosomal (red) cohesin-independent links across a time course of auxin treatment and withdrawal. APA scores are shown on top and APA plots for each time point are shown on the bottom. Cohesin-independent links are rapidly strengthened as cohesin is degraded and weaken as cohesin is restored.</p>
-		</div>
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            <p style="font-size:30px" class="panelID">A</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-1">
+        <div>
+            <img class="img-responsive"
+                 src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4A_untreated_header.png"
+                 alt="Untreated" width="100">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-2">
+        <div id="app-container-1">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-2">
+        <div id="app-container-3">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-5">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-4">
+        <div id="app-container-7">
+        </div>
+        <br>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-1">
+        <div>
+            <img class="img-responsive"
+                 src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4A_treated_header.png"
+                 alt="6hr Auxin treated" width="100">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-2">
+        <div id="app-container-2">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-2">
+        <div id="app-container-4">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-6">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-4">
+        <div id="app-container-8">
+        </div>
+        <br>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            <p style="font-size:30px" class="panelID">B</p>
+        </div>
+        <br>
+        <div>
+            <img src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4B_loop_lengths.png"
+                 alt="loop lengths" width="300">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-8">
+        <div>
+            <p style="font-size:30px" class="panelID">D</p>
+        </div>
+        <br>
+        <div>
+            <img src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4D_SE_enrichment.png"
+                 alt="SE enrichments" width="600">
+        </div>
+        <br>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            <p style="font-size:30px" class="panelID">C</p>
+        </div>
+        <br>
+        <div>
+            <img src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4C_CTCF_orientations.png"
+                 alt="CTCF_orientations" width="300">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-8">
+        <div>
+            <p style="font-size:30px" class="panelID">E</p>
+        </div>
+        <br>
+        <div>
+            <img src="https://theaidenlab.github.io/figures/css/img/figure4_static_components/4E_timecourse_APA.png"
+                 alt="timecourse APA" width="600">
+        </div>
+        <br>
+    </div>
+</div>
+<br>
+<div>
+    <p class="legend">(A) Examples of a network of intra- and interchromosomal cohesin-independent links between
+        superenhancers on chr6, chr4, and chr2. H3K27 acetylation does not change with auxin treatment, but
+        cohesin-independent links are significantly strengthened upon treatment. Intrachromosomal matrices are shown at
+        25kb (on-diagonal) and 50kb (off-diagonal) resolutions; interchromosomal matrices are shown at 100kb resolution.
+        Maximum color intensities are 28 reads for the offdiagonal intrachromosomal matrices and 20 reads for the
+        interchromosomal matrices.</p>
+</div>
+<div>
+    <p class="legend">(B) Length distribution of cohesin-mediated loops (green) versus cohesin-independent loops
+        (blue). </p>
+</div>
+<div>
+    <p class="legend">(C) CTCF binding patterns at cohesin-associated (top) versus cohesin-independent loop anchors
+        (bottom). Only cohesin-associated loops obey the convergent rule. </p>
+</div>
+<div>
+    <p class="legend">(D) Percent of cohesin-independent loop anchors bound versus fold enrichment for 36 DNA-binding
+        proteins and histone modifications. Superenhancers are strongly enriched at cohesin-independent loop
+        anchors.</p>
+</div>
+<div>
+    <p class="legend">(E) APA for intrachromosomal (blue) and interchromosomal (red) cohesin-independent links across a
+        time course of auxin treatment and withdrawal. APA scores are shown on top and APA plots for each time point are
+        shown on the bottom. Cohesin-independent links are rapidly strengthened as cohesin is degraded and weaken as
+        cohesin is restored.</p>
+</div>
 
-    
 
-    <style type="text/css">
-   
+<style type="text/css">
+
     .row {
-    display: flex;
-	}
-	.legend {
-			text-align:left; 
-			font:Helvetica Neue;
-			font-size:36; 
-			px color: #333333;
-	}
-	.col-md-2 {
-		display: inline-flex;
-		flex-direction: column;
-  		justify-content: center;
-	}
+        display: flex;
+    }
 
-    </style>
+    .legend {
+        text-align: left;
+        font: Helvetica Neue;
+        font-size: 36;
+        px color: #333333;
+    }
+
+    .col-md-2 {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+</style>
 
 <script type="text/javascript">
 
-$(document).ready(function () {
+    $(document).ready(function () {
 
         var browser1, browser2, browser3, browser4, browser5, browser6, browser7, browser8;
         var windowSize = 480;
@@ -260,6 +282,7 @@ $(document).ready(function () {
                         width: 189,
                         height: windowSize,
                         dataset: dataset,
+                        initialImage: "img/fig4a-1.png",
                         href: "?state=2%2C6%2C4%2C1800%2C1430%2C2.05%2CKR&colorScale=28&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Finternal%2FWT_FE.bw%7CUntreated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
                     });
 
@@ -268,6 +291,7 @@ $(document).ready(function () {
                         width: 169,
                         height: windowSize,
                         dataset: dataset,
+                        initialImage: "img/fig4a-2.png",
                         href: "?state=4%2C6%2C4%2C290%2C1430%2C2.05CKR&colorScale=28&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Finternal%2FWT_FE.bw%7CUntreated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
                     });
 
@@ -276,26 +300,28 @@ $(document).ready(function () {
                         width: 252,
                         height: windowSize,
                         dataset: dataset,
+                        initialImage: "img/fig4a-3.png",
                         href: "?state=6%2C6%2C5%2C500%2C2860%2C1.025%2CKR&colorScale=20&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Finternal%2FWT_FE.bw%7CUntreated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
                     });
 
-		    browser7 = hic.createBrowser($('#app-container-7'), {
+                    browser7 = hic.createBrowser($('#app-container-7'), {
                         miniMode: true,
                         width: windowSize,
                         height: windowSize,
                         dataset: dataset,
+                        initialImage: "img/fig4a-4.png",
                         href: "?state=6%2C6%2C5%2C2860%2C2860%2C1.025%2CKR&colorScale=160&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Finternal%2FWT_FE.bw%7CUntreated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
                     });
 
-                    if(browser2) hic.syncBrowsers([browser1, browser2]);
-                    if(browser4) hic.syncBrowsers([browser3, browser4]);
-                    if(browser6) hic.syncBrowsers([browser5, browser6]);
-		    if(browser8) hic.syncBrowsers([browser7, browser8]);
+                    if (browser2) hic.syncBrowsers([browser1, browser2]);
+                    if (browser4) hic.syncBrowsers([browser3, browser4]);
+                    if (browser6) hic.syncBrowsers([browser5, browser6]);
+                    if (browser8) hic.syncBrowsers([browser7, browser8]);
                 })
                 .catch(function (error) {
                     console.log(error);
                 })
-hic.loadDataset({
+        hic.loadDataset({
             url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/treated_6hr/unsynchronized/combined.hic",
             nvi: "33255540403%2C36479"
         })
@@ -305,6 +331,7 @@ hic.loadDataset({
                         width: 189,
                         height: windowSize,
                         dataset: dataset,
+                        initialImage: "img/fig4a-5.png",
                         href: "?state=2%2C6%2C4%2C1800%2C1430%2C2.05%2CKR&colorScale=28&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Finternal%2FAID_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
                     });
 
@@ -313,6 +340,7 @@ hic.loadDataset({
                         width: 169,
                         height: windowSize,
                         dataset: dataset,
+                        initialImage: "img/fig4a-6.png",
                         href: "?state=4%2C6%2C4%2C290%2C1430%2C2.05%2CKR&colorScale=28&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Finternal%2FAID_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
                     });
 
@@ -321,26 +349,28 @@ hic.loadDataset({
                         width: 252,
                         height: windowSize,
                         dataset: dataset,
+                        initialImage: "img/fig4a-7.png",
                         href: "?state=6%2C6%2C5%2C500%2C2860%2C1.025%2CKR&colorScale=20&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Finternal%2FAID_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
                     });
-		    
-		    browser8 = hic.createBrowser($('#app-container-8'), {
+
+                    browser8 = hic.createBrowser($('#app-container-8'), {
                         miniMode: true,
                         width: windowSize,
                         height: windowSize,
                         dataset: dataset,
+                        initialImage: "img/fig4a-8.png",
                         href: "?state=6%2C6%2C5%2C2860%2C2860%2C1.025%2CKR&colorScale=160&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fhicfiles.s3.amazonaws.com%2Finternal%2FAID_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-		    });
+                    });
 
-                    if(browser1) hic.syncBrowsers([browser1, browser2]);
-                    if(browser3) hic.syncBrowsers([browser3, browser4]);
-                    if(browser5) hic.syncBrowsers([browser5, browser6]);
-		    if(browser7) hic.syncBrowsers([browser7, browser8]);
+                    if (browser1) hic.syncBrowsers([browser1, browser2]);
+                    if (browser3) hic.syncBrowsers([browser3, browser4]);
+                    if (browser5) hic.syncBrowsers([browser5, browser6]);
+                    if (browser7) hic.syncBrowsers([browser7, browser8]);
                 })
                 .catch(function (error) {
                     console.log(error);
                 });
-	});
+    });
 
 </script>
 
