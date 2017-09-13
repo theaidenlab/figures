@@ -1,0 +1,4 @@
+{
+    "untreated_unsynchronized_combined": "https://s3.amazonaws.com/hicfiles/hiseq/degron/untreated/unsynchronized/combined.hic",
+    "treadted_6hr_unsynchronized": "https://s3.amazonaws.com/hicfiles/hiseq/degron/treated_6hr/unsynchronized/combined.hic"
+}
