@@ -1,4 +1,8 @@
 {
-    "untreated_unsynchronized_combined": "https://s3.amazonaws.com/hicfiles/hiseq/degron/untreated/unsynchronized/combined.hic",
-    "treadted_6hr_unsynchronized": "https://s3.amazonaws.com/hicfiles/hiseq/degron/treated_6hr/unsynchronized/combined.hic"
+    "degron/untreated/unsynchronized/combined.hic": "https://s3.amazonaws.com/hicfiles/hiseq/degron/untreated/unsynchronized/combined.hic",
+    "degron/treated_6hr/unsynchronized/combined.hic": "https://s3.amazonaws.com/hicfiles/hiseq/degron/treated_6hr/unsynchronized/combined.hic",
+    "degron/time_course/Auxin_treated_360min_withdraw_20min/combined.hic": "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/Auxin_treated_360min_withdraw_20min/combined.hic",
+    "degron/time_course/Auxin_treated_360min_withdraw_40min/combined.hic": "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/Auxin_treated_360min_withdraw_40min/combined.hic",
+    "degron/time_course/Auxin_treated_360min_withdraw_60min/combined.hic": "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/Auxin_treated_360min_withdraw_60min/combined.hic",
+    "degron/time_course/Auxin_treated_360min_withdraw_180min/combined.hic": "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/Auxin_treated_360min_withdraw_180min/combined.hic"
 }

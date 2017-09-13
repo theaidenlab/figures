@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
   ~  The MIT License (MIT)
@@ -25,69 +24,71 @@
 
 <html>
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Juicebox</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" type="image/png" href="https://aidenlab.org/favicon.ico">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Juicebox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" href="https://aidenlab.org/favicon.ico">
 
-	<!-- Shims for legacy browsers -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.js"></script>
+    <!-- Shims for legacy browsers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.js"></script>
 
-	<!-- DataTables CSS -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.css"/>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.css"/>
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<!-- Font Awesome CSS-->
-	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-	<!-- JQuery UI CSS -->
-	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/redmond/jquery-ui.css"/>
+    <!-- JQuery UI CSS -->
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/redmond/jquery-ui.css"/>
 
-	<!-- IGV CSS -->
-	<link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/release/cell/igv.css">
+    <!-- IGV CSS -->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/release/cell/igv.css">
 
-	<!-- site CSS -->
-	<link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/release/cell/site/css/site.css">
+    <!-- site CSS -->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/release/cell/site/css/site.css">
 
-	<!-- Juicebox CSS-->
-	<link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/release/cell/juicebox-bootstrap.css">
+    <!-- Juicebox CSS-->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/release/cell/juicebox-bootstrap.css">
 
-	<!-- Bootstrap-Select Plugin CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <!-- Bootstrap-Select Plugin CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 
-	<!-- Underscore JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!-- Underscore JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 
-	<!-- JQuery JS -->
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-	<!-- JQuery UI JS -->
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- JQuery UI JS -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
-	<!-- Tether JS (Use with Alpha 4.0.0-alpha.6 Bootstrap) -->
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
+    <!-- Tether JS (Use with Alpha 4.0.0-alpha.6 Bootstrap) -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
 
-	<!-- Bootstrap JS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<!-- Bootstrap-Select Plugin JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <!-- Bootstrap-Select Plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 
-	<!-- DataTables JS -->
-	<script src="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
 
-	<!-- IGV JS-->
-	<script src="https://igv.org/web/jb/release/cell/igv.min.js"></script>
+    <!-- IGV JS-->
+    <script src="https://igv.org/web/jb/release/cell/igv.min.js"></script>
 
-	<!-- Site JS-->
-	<script src="https://igv.org/web/jb/release/cell/site/js/site.js"></script>
+    <!-- Site JS-->
+    <script src="https://igv.org/web/jb/release/cell/site/js/site.js"></script>
 
-	<!-- Juicebox JS -->
-	<script src="https://igv.org/web/jb/release/cell/juicebox.js"></script>
+    <!-- Juicebox JS -->
+    <script src="https://igv.org/web/jb/release/cell/juicebox.js"></script>
 
     <!-- MS polyfill (pointer -> touch -->
     <script src="https://igv.org/web/jb/release/current/touchpolyfill.min.js"></script>
@@ -96,599 +97,641 @@
 
 <body style="margin:30px">
 
-	<h1 style="text-align: center; font:Helvetica Neue;font-size:36px;line-height: 40px; color: #333333
+<h1 style="text-align: center; font:Helvetica Neue;font-size:36px;line-height: 40px; color: #333333
 ">Figure 2</h1>
 
-		<div class="row">
-			<div class="col-md-12">
-				<div> 
-					<p style="font-size:30px" class="panelID">A</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div>
-					<img class="img-responsive" src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2A_untreated_header.png" alt="Untreated" width="400">
-				</div>
-				<br>
-					<div id="app-container-1">
-                                </div>
-				<br>
-					<div id="app-container-3">
-                                </div>
-                                <br>
-					<div id="app-container-5">
-                                </div>
-                                <br>
-			</div>
-			<div class="col-md-4">
-				<div>
-                                        <img class="img-responsive" src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2A_treated_header.png" alt="6hr Auxin Treated" width="400">
-				</div>
-				<br>
-                                        <div id="app-container-2">
-                                </div>
-                                <br>
-					<div id="app-container-4">
-                                </div>
-                                <br>
-					<div id="app-container-6">
-                                </div>
-                                <br>
-			</div>
-	       </div>
-	       <div class="row">
-			<div class="col-md-5">
-				<div>
-                                        <p style="font-size:30px" class="panelID">B</p>
-                                </div>
-                                <br>
-                                <div>
-                                        <img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2B_APA_timecourse.png" alt="APA timecourse" width="500">
-                                </div>
-				<br>
-			</div>
-			<div class=col-md-2">
-				<div>
-					<p style="font-size:30px" class="panelID">C</p>
-                	        </div>
-                	        <br>
-                	        <div>
-                	                <img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2C_loopdomain_recovery.png" alt="loopdomain recovery" width="200">
-                	        </div>
-                        </div>
-			<div class="col-md-2">
-                        	<div>
-                            		<p style="font-size:30px" class="panelID">D</p>
-                        	</div>
-                        	<br>
-                        	<div>
-                        	        <img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2D_recovery_vs_features.png" alt="recovery vs features" width="150">
-                        	</div>
-                        </div>	
-		</div>
-	       <div class="row">
-			<div class="col-md-12">
-			<div>
-                                <p style="font-size:30px" class="panelID">E</p>
-                        </div>
-                        </div>
-	       </div>
-   	       <div class="row">
-			<div class="col-md-3">
-				<div id="app-container-7">
-                        </div> 
-			<br>
-			</div>
-			<div class="col-md-3">
-                                <div id="app-container-8">
-                        </div>
-			<br>        
-                        </div>
-			<div class="col-md-3">
-                                <div id="app-container-9">
-                        </div>
-			<br>        
-                        </div>
-  			<div class="col-md-3">
-                                <div id="app-container-10">
-                        </div>
-			<br>        
-                        </div>
-			<div class="col-md-3">
-                                <div id="app-container-11">
-                        </div>	
-			<br>        
-                        </div>
-			<div class="col-md-3">
-                                <div id="app-container-12">
-                        </div>  
-			<br>      
-                        </div>
-		</div>
-		<div class="row">
-                        <div class="col-md-3">
-                                <div id="app-container-13">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-14">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-15">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-16">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-17">
-                        </div>  
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-18">
-                        </div>  
-                        <br>
-                        </div>
-                </div>
-		<div class="row">
-                        <div class="col-md-3">
-                                <div id="app-container-19">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-20">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-21">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-22">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-23">
-                        </div>  
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-24">
-                        </div>  
-                        <br>
-                        </div>
-                </div>
-		<div class="row">
-                        <div class="col-md-3">
-                                <div id="app-container-25">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-26">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-27">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-28">
-                        </div>
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-29">
-                        </div>  
-                        <br>
-                        </div>
-                        <div class="col-md-3">
-                                <div id="app-container-30">
-                        </div>  
-                        <br>
-                        </div>
-                </div>
-   		<br>
-		<div>    	
-  			<p class="legend">(A) Contact matrices show that loop domains in untreated HCT-116-RAD21-mAC cells (top) disappear after auxin treatment (bottom). Three representative loci are shown (at 10kb resolution): chr8:133.8-134.6Mb (left), chr4:40.8-42.1Mb (middle) and chr1:91.9-95.8Mb (right).</p>
-  		</div>
-		<div>
-			<p class="legend">(B) Aggregate peak analysis (APA (Rao et al., 2014)) was used to measure the aggregate strength of the links associated with all loop domains in low-resolution Hi-C contact maps generated across a time course of auxin treatment and withdrawal. APA scores are shown on top; values greater than 1 indicate the presence of loops. APA plots for each time point are shown on the bottom; the strength of looping is indicated by the extent of focal enrichment at the center of the plot. Loop domains are rapidly lost as cohesin is degraded, and quickly restored when auxin is withdrawn (See Fig S2B).</p>
-		</div>
-		<div>
-			<p class="legend">(C) The blue lines represent individual loop reformation curves for each of 1,988 loop domains. The plots are scaled so that the number of contacts in the untreated map corresponds to a value of 1, and the number of contacts in the auxin-treated map corresponds to 0. Median curves for all loop domains (black), the top 5% of loop domains (in terms of speed of recovery, see Methods; green), and the bottom 5% of loop domains (red) are shown. Error bars indicate 25th and 75th percentile for each set of loops.</p>
-		</div>
-		<div>
-			<p class="legend">(D) Enrichment of epigenetic features within a loop domain as a function of the loop domain’s speed of recovery (see Methods), showing the slowest 5%, the 30th-35th percentile, the 65th-70th percentile, and the fastest 5%. Enrichment is with respect to the average value of the feature across all the intervals spanned by loop domains (see Methods). Superenhancers and strong NIPBL peaks are particularly enriched in fast loop domains vs. slow loop domains. Repressive histone modifications exhibit the opposite trend.</p>
-		</div>
-		<div>
-			<p class="legend">(E) Two examples of regions containing fast loop domains (1st row: chr18:67.6-68.4Mb; 2nd row: chr14:68.2-69.5Mb) and two examples of regions containing slow loop domains (3rd row: chr5:95.5-96.15Mb; 4th row: chr12:91.15-91.95Mb) are shown, along with ChIP-Seq tracks (from auxin-treated cells) for NIPBL, H3K4me1, H3K4me3, and H3K27Ac. For fast loop domains, reformation is apparent by 20-40 minutes after auxin withdrawal, whereas for slow loop domains, reformation is not seen until 3 hours after auxin withdrawal.</p>
-		</div>
-		 
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            <p style="font-size:30px" class="panelID">A</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            <img class="img-responsive"
+                 src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2A_untreated_header.png"
+                 alt="Untreated" width="400">
+        </div>
+        <br>
+        <div id="app-container-1">
+        </div>
+        <br>
+        <div id="app-container-3">
+        </div>
+        <br>
+        <div id="app-container-5">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-4">
+        <div>
+            <img class="img-responsive"
+                 src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2A_treated_header.png"
+                 alt="6hr Auxin Treated" width="400">
+        </div>
+        <br>
+        <div id="app-container-2">
+        </div>
+        <br>
+        <div id="app-container-4">
+        </div>
+        <br>
+        <div id="app-container-6">
+        </div>
+        <br>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-5">
+        <div>
+            <p style="font-size:30px" class="panelID">B</p>
+        </div>
+        <br>
+        <div>
+            <img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2B_APA_timecourse.png"
+                 alt="APA timecourse" width="500">
+        </div>
+        <br>
+    </div>
+    <div class=col-md-2">
+        <div>
+            <p style="font-size:30px" class="panelID">C</p>
+        </div>
+        <br>
+        <div>
+            <img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2C_loopdomain_recovery.png"
+                 alt="loopdomain recovery" width="200">
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div>
+            <p style="font-size:30px" class="panelID">D</p>
+        </div>
+        <br>
+        <div>
+            <img src="https://theaidenlab.github.io/figures/css/img/figure2_static_components/Fig2D_recovery_vs_features.png"
+                 alt="recovery vs features" width="150">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            <p style="font-size:30px" class="panelID">E</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div id="app-container-7">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-8">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-9">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-10">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-11">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-12">
+        </div>
+        <br>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div id="app-container-13">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-14">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-15">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-16">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-17">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-18">
+        </div>
+        <br>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div id="app-container-19">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-20">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-21">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-22">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-23">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-24">
+        </div>
+        <br>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div id="app-container-25">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-26">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-27">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-28">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-29">
+        </div>
+        <br>
+    </div>
+    <div class="col-md-3">
+        <div id="app-container-30">
+        </div>
+        <br>
+    </div>
+</div>
+<br>
+<div>
+    <p class="legend">(A) Contact matrices show that loop domains in untreated HCT-116-RAD21-mAC cells (top) disappear
+        after auxin treatment (bottom). Three representative loci are shown (at 10kb resolution): chr8:133.8-134.6Mb
+        (left), chr4:40.8-42.1Mb (middle) and chr1:91.9-95.8Mb (right).</p>
+</div>
+<div>
+    <p class="legend">(B) Aggregate peak analysis (APA (Rao et al., 2014)) was used to measure the aggregate strength of
+        the links associated with all loop domains in low-resolution Hi-C contact maps generated across a time course of
+        auxin treatment and withdrawal. APA scores are shown on top; values greater than 1 indicate the presence of
+        loops. APA plots for each time point are shown on the bottom; the strength of looping is indicated by the extent
+        of focal enrichment at the center of the plot. Loop domains are rapidly lost as cohesin is degraded, and quickly
+        restored when auxin is withdrawn (See Fig S2B).</p>
+</div>
+<div>
+    <p class="legend">(C) The blue lines represent individual loop reformation curves for each of 1,988 loop domains.
+        The plots are scaled so that the number of contacts in the untreated map corresponds to a value of 1, and the
+        number of contacts in the auxin-treated map corresponds to 0. Median curves for all loop domains (black), the
+        top 5% of loop domains (in terms of speed of recovery, see Methods; green), and the bottom 5% of loop domains
+        (red) are shown. Error bars indicate 25th and 75th percentile for each set of loops.</p>
+</div>
+<div>
+    <p class="legend">(D) Enrichment of epigenetic features within a loop domain as a function of the loop domain’s
+        speed of recovery (see Methods), showing the slowest 5%, the 30th-35th percentile, the 65th-70th percentile, and
+        the fastest 5%. Enrichment is with respect to the average value of the feature across all the intervals spanned
+        by loop domains (see Methods). Superenhancers and strong NIPBL peaks are particularly enriched in fast loop
+        domains vs. slow loop domains. Repressive histone modifications exhibit the opposite trend.</p>
+</div>
+<div>
+    <p class="legend">(E) Two examples of regions containing fast loop domains (1st row: chr18:67.6-68.4Mb; 2nd row:
+        chr14:68.2-69.5Mb) and two examples of regions containing slow loop domains (3rd row: chr5:95.5-96.15Mb; 4th
+        row: chr12:91.15-91.95Mb) are shown, along with ChIP-Seq tracks (from auxin-treated cells) for NIPBL, H3K4me1,
+        H3K4me3, and H3K27Ac. For fast loop domains, reformation is apparent by 20-40 minutes after auxin withdrawal,
+        whereas for slow loop domains, reformation is not seen until 3 hours after auxin withdrawal.</p>
+</div>
 
-    <style type="text/css">
-   
+
+<style type="text/css">
+
     .row {
-    display: flex;
-	}
-	.legend {
-			text-align:left; 
-			font:Helvetica Neue;
-			font-size:36; 
-			px color: #333333;
-	}
-	.col-md-2 {
-		display: inline-flex;
-		flex-direction: column;
-  		justify-content: center;
-	}
+        display: flex;
+    }
 
-    </style>
+    .legend {
+        text-align: left;
+        font: Helvetica Neue;
+        font-size: 36;
+        px color: #333333;
+    }
+
+    .col-md-2 {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+</style>
 
 <script type="text/javascript">
 
-$(document).ready(function () {
+    $(document).ready(function () {
 
         var browser1, browser2, browser3, browser4, browser5, browser6;
         var browser7, browser8, browser9, browser10, browser11, browser12, browser13, browser14, browser15, browser16, browser17, browser18, browser19, browser20, browser21, browser22, browser23, browser24, browser25, browser26, browser27, browser28, browser29, browser30;
         var windowSize = 445;
         var windowSize2 = 255;
 
+        // Synch browsers iff all are defined
+        function syncBrowsers(browsers) {
+            var i;
+            for(i=0; i<browsers.length; i++) {
+                if(browsers[i] === undefined) return;
+            }
+            hic.syncBrowsers(browsers);
+        }
 
-        hic.loadDataset({
-            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/untreated/unsynchronized/combined.hic",
-            nvi: "30439217680%2C36479"
-        })
-                .then(function (dataset) {
+        igvxhr.loadJson("config/hicFileConfigs.txt", {})
 
-                    browser1 = hic.createBrowser($('#app-container-1'), {
-                        miniMode: true,
-                        width: windowSize,
-                        height: windowSize,
-                        dataset: dataset,
-                        initialImage: "img/fig2a-1.png",
-                        href: "?state=8%2C8%2C8%2C26760%2C26760%2C2.44%2CKR&colorScale=42&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
-                    });
+                .then(function (config) {
 
-                    browser3 = hic.createBrowser($('#app-container-3'), {
+                    hic.loadDataset({
+                        url: config["degron/untreated/unsynchronized/combined.hic"],
+                        nvi: "30439217680%2C36479"
+                    })
+                            .then(function (dataset) {
 
-                        miniMode: true,
-                        width: windowSize,
-                        height: windowSize,
-                        dataset: dataset,
-                        initialImage: "img/fig2a-3.png",
-                        href: "?state=4%2C4%2C7%2C4080%2C4080%2C3%2CKR&colorScale=114&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
-                    });
+                                browser1 = hic.createBrowser($('#app-container-1'), {
+                                    miniMode: true,
+                                    width: windowSize,
+                                    height: windowSize,
+                                    dataset: dataset,
+                                    initialImage: "img/fig2a-1.png",
+                                    href: "?state=8%2C8%2C8%2C26760%2C26760%2C2.44%2CKR&colorScale=42&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
+                                });
 
-                    browser5 = hic.createBrowser($('#app-container-5'), {
-                        miniMode: true,
-                        width: windowSize,
-                        height: windowSize,
-                        dataset: dataset,
-                        initialImage: "img/fig2a-5.png",
-                        href: "?state=1%2C1%2C7%2C9190%2C9190%2C1%2CKR&colorScale=111&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
-                    });
-                    
-		    browser12 = hic.createBrowser($('#app-container-12'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                        href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=120&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-		    });
+                                browser3 = hic.createBrowser($('#app-container-3'), {
 
-                    browser18 = hic.createBrowser($('#app-container-18'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                        href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=75&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
+                                    miniMode: true,
+                                    width: windowSize,
+                                    height: windowSize,
+                                    dataset: dataset,
+                                    initialImage: "img/fig2a-3.png",
+                                    href: "?state=4%2C4%2C7%2C4080%2C4080%2C3%2CKR&colorScale=114&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
+                                });
 
-                    browser24 = hic.createBrowser($('#app-container-24'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                        href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=100&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
+                                browser5 = hic.createBrowser($('#app-container-5'), {
+                                    miniMode: true,
+                                    width: windowSize,
+                                    height: windowSize,
+                                    dataset: dataset,
+                                    initialImage: "img/fig2a-5.png",
+                                    href: "?state=1%2C1%2C7%2C9190%2C9190%2C1%2CKR&colorScale=111&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
+                                });
 
-		    browser30 = hic.createBrowser($('#app-container-30'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                        href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=80&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Funtreated%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
+                                browser12 = hic.createBrowser($('#app-container-12'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=120&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
 
-                    if(browser2) hic.syncBrowsers([browser1, browser2]);
-                    if(browser4) hic.syncBrowsers([browser3, browser4]);
-                    if(browser6) hic.syncBrowsers([browser5, browser6]);
-                    if(browser11) hic.syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
-                    if(browser17) hic.syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
-                    if(browser23) hic.syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
-                    if(browser29) hic.syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                })
-hic.loadDataset({
-            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/treated_6hr/unsynchronized/combined.hic",
-            nvi: "33255540403%2C36479"
-        })
-                .then(function (dataset) {
-                    browser2 = hic.createBrowser($('#app-container-2'), {
-                        miniMode: true,
-                        width: windowSize,
-                        height: windowSize,
-                        dataset: dataset,
-                        initialImage: "img/fig2a-2.png",
-                        href: "?state=8%2C8%2C8%2C26760%2C26760%2C2.44%2CKR&colorScale=38&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
-                    });
+                                browser18 = hic.createBrowser($('#app-container-18'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=75&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
 
-                    browser4 = hic.createBrowser($('#app-container-4'), {
-                        miniMode: true,
-                        width: windowSize,
-                        height: windowSize,
-                        dataset: dataset,
-                        initialImage: "img/fig2a-4.png",
-                        href: "?state=4%2C4%2C7%2C4080%2C4080%2C3%2CKR&colorScale=111&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
-                    });
+                                browser24 = hic.createBrowser($('#app-container-24'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=100&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
 
-                    browser6 = hic.createBrowser($('#app-container-6'), {
-                        miniMode: true,
-                        width: windowSize,
-                        height: windowSize,
-                        dataset: dataset,
-                        initialImage: "img/fig2a-6.png",
-                        href: "?state=1%2C1%2C7%2C9190%2C9190%2C1%2CKR&colorScale=107&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
-                    });
-                    
-		    browser7 = hic.createBrowser($('#app-container-7'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                        href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=116&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
+                                browser30 = hic.createBrowser($('#app-container-30'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=80&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
 
-                    browser13 = hic.createBrowser($('#app-container-13'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                        href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=73&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
+                                syncBrowsers([browser1, browser2]);
+                                syncBrowsers([browser3, browser4]);
+                                syncBrowsers([browser5, browser6]);
+                                syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
+                                syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
+                                syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
+                                syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            })
 
-                    browser19 = hic.createBrowser($('#app-container-19'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                        href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=97&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
+                    hic.loadDataset({
+                        url: config["degron/treated_6hr/unsynchronized/combined.hic"],
+                        nvi: "33255540403%2C36479"
+                    })
+                            .then(function (dataset) {
+                                browser2 = hic.createBrowser($('#app-container-2'), {
+                                    miniMode: true,
+                                    width: windowSize,
+                                    height: windowSize,
+                                    dataset: dataset,
+                                    initialImage: "img/fig2a-2.png",
+                                    href: "?state=8%2C8%2C8%2C26760%2C26760%2C2.44%2CKR&colorScale=38&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
+                                });
 
-		    browser25 = hic.createBrowser($('#app-container-25'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                        href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=78&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftreated_6hr%2Funsynchronized%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
+                                browser4 = hic.createBrowser($('#app-container-4'), {
+                                    miniMode: true,
+                                    width: windowSize,
+                                    height: windowSize,
+                                    dataset: dataset,
+                                    initialImage: "img/fig2a-4.png",
+                                    href: "?state=4%2C4%2C7%2C4080%2C4080%2C3%2CKR&colorScale=111&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
+                                });
 
-                    if(browser1) hic.syncBrowsers([browser1, browser2]);
-                    if(browser3) hic.syncBrowsers([browser3, browser4]);
-                    if(browser5) hic.syncBrowsers([browser5, browser6]);
-		    if(browser12) hic.syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
-                    if(browser18) hic.syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
-                    if(browser24) hic.syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
-                    if(browser30) hic.syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
+                                browser6 = hic.createBrowser($('#app-container-6'), {
+                                    miniMode: true,
+                                    width: windowSize,
+                                    height: windowSize,
+                                    dataset: dataset,
+                                    initialImage: "img/fig2a-6.png",
+                                    href: "?state=1%2C1%2C7%2C9190%2C9190%2C1%2CKR&colorScale=107&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)"
+                                });
 
-                })
-                .catch(function (error) {
-                    console.log(error);
+                                browser7 = hic.createBrowser($('#app-container-7'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=116&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser13 = hic.createBrowser($('#app-container-13'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=73&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser19 = hic.createBrowser($('#app-container-19'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=97&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser25 = hic.createBrowser($('#app-container-25'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=78&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Treated%20(6%20hr)&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                syncBrowsers([browser1, browser2]);
+                                syncBrowsers([browser3, browser4]);
+                                syncBrowsers([browser5, browser6]);
+                                syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
+                                syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
+                                syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
+                                syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
+
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            });
+                    hic.loadDataset({
+                        url: config["degron/time_course/Auxin_treated_360min_withdraw_20min/combined.hic"],
+                        nvi: "6258352000%2C36479"
+                    })
+                            .then(function (dataset) {
+                                browser8 = hic.createBrowser($('#app-container-8'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=14&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2020min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser14 = hic.createBrowser($('#app-container-14'), {
+
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=9&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2020min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser20 = hic.createBrowser($('#app-container-20'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=11&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2020min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser26 = hic.createBrowser($('#app-container-26'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=9&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2020min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+                                syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
+                                syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
+                                syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
+                                syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
+
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            })
+                    hic.loadDataset({
+                        url: config["degron/time_course/Auxin_treated_360min_withdraw_40min/combined.hic"],
+                        nvi: "9527142471%2C36479"
+                    })
+                            .then(function (dataset) {
+
+                                browser9 = hic.createBrowser($('#app-container-9'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=25&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2040min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser15 = hic.createBrowser($('#app-container-15'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=16&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2040min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser21 = hic.createBrowser($('#app-container-21'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=21&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2040min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser27 = hic.createBrowser($('#app-container-27'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=17&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2040min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
+                                syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
+                                syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
+                                syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            })
+                    hic.loadDataset({
+                        url: config["degron/time_course/Auxin_treated_360min_withdraw_60min/combined.hic"],
+                        nvi: "8864750341%2C36479"
+                    })
+                            .then(function (dataset) {
+
+                                browser10 = hic.createBrowser($('#app-container-10'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=23&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2060min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser16 = hic.createBrowser($('#app-container-16'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=14&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2060min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser22 = hic.createBrowser($('#app-container-22'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=19&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2060min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser28 = hic.createBrowser($('#app-container-28'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=15&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2060min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
+                                syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
+                                syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
+                                syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            })
+                    hic.loadDataset({
+                        url: config["degron/time_course/Auxin_treated_360min_withdraw_180min/combined.hic"],
+                        nvi: "8773354471%2C36479"
+                    })
+                            .then(function (dataset) {
+
+                                browser11 = hic.createBrowser($('#app-container-11'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=25&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20180min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FNIPBL%5FFE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FH3K27Ac%5FFE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser17 = hic.createBrowser($('#app-container-17'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=16&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20180min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FNIPBL%5FFE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FH3K27Ac%5FFE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser23 = hic.createBrowser($('#app-container-23'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=21&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20180min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FNIPBL%5FFE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FH3K27Ac%5FFE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                browser29 = hic.createBrowser($('#app-container-29'), {
+                                    miniMode: true,
+                                    width: windowSize2,
+                                    height: windowSize2,
+                                    dataset: dataset,
+                                    href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=17&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20180min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FNIPBL%5FFE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FH3K27Ac%5FFE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
+                                });
+
+                                syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
+                                syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
+                                syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
+                                syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            })
+
                 });
-	hic.loadDataset({
-            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/Auxin_treated_360min_withdraw_20min/combined.hic",
-            nvi: "6258352000%2C36479"
-        })
-                .then(function (dataset) {
-                    browser8 = hic.createBrowser($('#app-container-8'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-			href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=14&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_20min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2020min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
-
-                    browser14 = hic.createBrowser($('#app-container-14'), {
-
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-        		href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=9&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_20min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2020min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"            
-                    });
-
-                    browser20 = hic.createBrowser($('#app-container-20'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                    	href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=11&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_20min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2020min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
-
-                    browser26 = hic.createBrowser($('#app-container-26'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-			href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=9&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_20min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2020min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"                    
-                    });
-                    if(browser7) hic.syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
-                    if(browser13) hic.syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
-                    if(browser19) hic.syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
-                    if(browser25) hic.syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
-
-                })
-                .catch(function (error) {
-                    console.log(error);
-                })
-	hic.loadDataset({
-            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/Auxin_treated_360min_withdraw_40min/combined.hic",
-            nvi: "9527142471%2C36479"
-        })  
-                .then(function (dataset) {
-
-                    browser9 = hic.createBrowser($('#app-container-9'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                	href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=25&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_40min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2040min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"    
-                    });
-
-                    browser15 = hic.createBrowser($('#app-container-15'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-        		href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=16&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_40min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2040min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"            
-                    });
-
-                    browser21 = hic.createBrowser($('#app-container-21'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                    	href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=21&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_40min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2040min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
-
-                    browser27 = hic.createBrowser($('#app-container-27'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-        		href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=17&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_40min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2040min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"            
-                    });
-
-                    if(browser8) hic.syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
-                    if(browser14) hic.syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
-                    if(browser20) hic.syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
-                    if(browser26) hic.syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                })
-	hic.loadDataset({
-            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/Auxin_treated_360min_withdraw_60min/combined.hic",
-            nvi: "8864750341%2C36479"
-        })
-                .then(function (dataset) {
-
-                    browser10 = hic.createBrowser($('#app-container-10'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                	href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=23&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_60min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2060min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
-
-                    browser16 = hic.createBrowser($('#app-container-16'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-                        href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=14&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_60min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2060min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
-
-                    browser22 = hic.createBrowser($('#app-container-22'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-			href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=19&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_60min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2060min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"                    
-                    });
-
-                    browser28 = hic.createBrowser($('#app-container-28'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-			href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=15&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime_course%2FAuxin_treated_360min_withdraw_60min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%2060min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FNIPBL_FE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq_data%2Ftreated%2FH3K27Ac_FE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"                    
-                    });
-
-                    if(browser9) hic.syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
-                    if(browser15) hic.syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
-                    if(browser21) hic.syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
-                    if(browser27) hic.syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                })
-	hic.loadDataset({
-            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/Auxin_treated_360min_withdraw_180min/combined.hic",
-	    nvi: "8773354471%2C36479"
-        })
-                .then(function (dataset) {
-
-                    browser11 = hic.createBrowser($('#app-container-11'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-        		href: "?state=18%2C18%2C7%2C6760%2C6760%2C2%2CKR&colorScale=25&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime%5Fcourse%2FAuxin%5Ftreated%5F360min%5Fwithdraw%5F180min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20180min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FNIPBL%5FFE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FH3K27Ac%5FFE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"            
-                    });
-
-                    browser17 = hic.createBrowser($('#app-container-17'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-        		href: "?state=14%2C14%2C7%2C6820%2C6820%2C1.22%2CKR&colorScale=16&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime%5Fcourse%2FAuxin%5Ftreated%5F360min%5Fwithdraw%5F180min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20180min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FNIPBL%5FFE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FH3K27Ac%5FFE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
-
-                    browser23 = hic.createBrowser($('#app-container-23'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-			href: "?state=5%2C5%2C7%2C9550%2C9550%2C2.46%2CKR&colorScale=21&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime%5Fcourse%2FAuxin%5Ftreated%5F360min%5Fwithdraw%5F180min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20180min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FNIPBL%5FFE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FH3K27Ac%5FFE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"                    
-                    });
-
-                    browser29 = hic.createBrowser($('#app-container-29'), {
-                        miniMode: true,
-                        width: windowSize2,
-                        height: windowSize2,
-                        dataset: dataset,
-			href: "?state=12%2C12%2C7%2C9115%2C9115%2C2%2CKR&colorScale=17&hicUrl=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Ftime%5Fcourse%2FAuxin%5Ftreated%5F360min%5Fwithdraw%5F180min%2Fcombined.hic&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20180min%20withdraw&tracks=https%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FNIPBL%5FFE.bw%7C6hr%20Treated%20NIPBL%7C0-3.5%7Crgb(0%2C0%2C255)%7C%7C%7Chttps%3A%2F%2Fs3.amazonaws.com%2Fhicfiles%2Fhiseq%2Fdegron%2Fchipseq%5Fdata%2Ftreated%2FH3K27Ac%5FFE.bw%7C6hr%20Treated%20H3K27Ac%7C0-15%7Crgb(255%2C0%2C0)"
-                    });
-
-                    if(browser10) hic.syncBrowsers([browser7, browser8, browser9, browser10, browser11, browser12]);
-                    if(browser16) hic.syncBrowsers([browser13, browser14, browser15, browser16, browser17, browser18]);
-                    if(browser22) hic.syncBrowsers([browser19, browser20, browser21, browser22, browser23, browser24]);
-                    if(browser28) hic.syncBrowsers([browser25, browser26, browser27, browser28, browser29, browser30]);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                })
-	
-	});
+    });
 
 </script>
 
