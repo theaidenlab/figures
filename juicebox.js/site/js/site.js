@@ -119,7 +119,7 @@ var site = (function (site) {
 
                     if ('hg19' === genomeId) {
 
-                        igvxhr.loadString("https://hicfiles.s3.amazonaws.com/internal/tracksMenu_hg19.txt")
+                        igv.xhr.loadString("https://hicfiles.s3.amazonaws.com/internal/tracksMenu_hg19.txt")
                             .then(function (data) {
                                 var lines = data ? data.splitLines() : [];
                                 lines.forEach(function (line) {

@@ -191,7 +191,7 @@
         var browser1, browser2;
         var windowSize = 445;
 
-        igvxhr.loadJson("config/hicFileConfigs.txt", {})
+        igv.xhr.loadJson("config/hicFileConfigs.txt", {})
                 .then(function (config) {
 
                     hic.loadDataset({

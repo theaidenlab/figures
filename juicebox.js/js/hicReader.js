@@ -65,7 +65,7 @@ var hic = (function (hic) {
 
         return new Promise(function (fulfill, reject) {
 
-            igvxhr.loadArrayBuffer(self.path,
+            igv.xhr.loadArrayBuffer(self.path,
                 {
                     headers: self.config.headers,
                     range: {start: 0, size: 64000},                     // TODO -- a guess, what if not enough ?
@@ -136,7 +136,7 @@ var hic = (function (hic) {
 
         return new Promise(function (fulfill, reject) {
 
-            igvxhr.loadArrayBuffer(self.path,
+            igv.xhr.loadArrayBuffer(self.path,
                 {
                     headers: self.config.headers,
                     range: range,
@@ -192,7 +192,7 @@ var hic = (function (hic) {
 
         return new Promise(function (fulfill, reject) {
 
-            igvxhr.loadArrayBuffer(self.path,
+            igv.xhr.loadArrayBuffer(self.path,
                 {
                     headers: self.config.headers,
                     range: range,
@@ -291,7 +291,7 @@ var hic = (function (hic) {
 
         return new Promise(function (fulfill, reject) {
 
-            igvxhr.loadArrayBuffer(self.path,
+            igv.xhr.loadArrayBuffer(self.path,
                 {
                     headers: self.config.headers,
                     range: {start: idx.start, size: idx.size},
@@ -359,7 +359,7 @@ var hic = (function (hic) {
 
             return new Promise(function (fulfill, reject) {
 
-                igvxhr.loadArrayBuffer(self.path,
+                igv.xhr.loadArrayBuffer(self.path,
                     {
                         headers: self.config.headers,
                         range: {start: idx.filePosition, size: idx.size},
@@ -540,7 +540,7 @@ var hic = (function (hic) {
 
         return new Promise(function (fulfill, reject) {
 
-            igvxhr.loadArrayBuffer(self.path,
+            igv.xhr.loadArrayBuffer(self.path,
                 {
                     headers: self.config.headers,
                     range: {start: idx.filePosition, size: idx.size},
