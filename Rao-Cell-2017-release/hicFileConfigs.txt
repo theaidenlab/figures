@@ -1,0 +1,8 @@
+{
+    "degron/untreated/unsynchronized/combined.hic": "https://s3.amazonaws.com/hicfiles/hiseq/degron/untreated/unsynchronized/combined.hic",
+    "degron/treated_6hr/unsynchronized/combined.hic": "https://s3.amazonaws.com/hicfiles/hiseq/degron/treated_6hr/unsynchronized/combined.hic",
+    "degron/time_course/Auxin_treated_360min_withdraw_20min/combined.hic": "https://dutqwct23uf27.cloudfront.net/20min_withdraw_combined.hic",
+    "degron/time_course/Auxin_treated_360min_withdraw_40min/combined.hic": "https://dutqwct23uf27.cloudfront.net/40min_withdraw_combined.hic",
+    "degron/time_course/Auxin_treated_360min_withdraw_60min/combined.hic": "https://dutqwct23uf27.cloudfront.net/60min_withdraw_combined.hic",
+    "degron/time_course/Auxin_treated_360min_withdraw_180min/combined.hic": "https://dutqwct23uf27.cloudfront.net/180min_withdraw_combined.hic"
+}
