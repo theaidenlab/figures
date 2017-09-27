@@ -163,7 +163,7 @@
     $(document).ready(function () {
         var browser1, browser2;
         var windowSize = 445;
-        igv.xhr.loadJson("config/hicFileConfigs.txt", {})
+        igv.xhr.loadJson("https://theaidenlab.github.io/figures/Rao-Cell-2017-release/hicFileConfigs.txt", {})
                 .then(function (config) {
                     hic.loadDataset({
                         url: config["degron/untreated/unsynchronized/combined.hic"],
