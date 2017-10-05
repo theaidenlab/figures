@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<!--
+  ~  The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2016-2017 The Regents of the University of California
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+  ~ associated documentation files (the "Software"), to deal in the Software without restriction, including
+  ~ without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
+  ~ following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all copies or substantial
+  ~ portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+  ~ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  FITNESS FOR A PARTICULAR PURPOSE AND
+  ~ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+  ~ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+  ~ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  ~
+-->
+
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Juicebox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" href="../favicon.ico">
+
+    <!-- Shims for legacy browsers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.js"></script>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css"
+    href="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.css"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- JQuery UI CSS -->
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/redmond/jquery-ui.css"/>
+
+    <!-- IGV CSS -->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/release/cell/igv.css">
+
+    <!-- site CSS -->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/release/cell/site/css/site.css">
+
+    <!-- Juicebox CSS-->
+    <link rel="stylesheet" type="text/css" href="https://igv.org/web/jb/release/cell/juicebox-bootstrap.css">
+
+    <!-- Bootstrap-Select Plugin CSS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+    <!-- Underscore JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- JQuery UI JS -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Tether JS (Use with Alpha 4.0.0-alpha.6 Bootstrap) -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap-Select Plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.15/sc-1.4.2/se-1.2.2/datatables.min.js"></script>
+
+    <!-- IGV JS-->
+    <script src="https://igv.org/web/jb/release/cell/igv.min.js"></script>
+
+    <!-- Site JS-->
+    <script src="https://igv.org/web/jb/release/cell/site/js/site.js"></script>
+
+    <!-- Juicebox JS -->
+    <script src="https://igv.org/web/jb/release/cell/juicebox.js"></script>
+
+    <!-- MS polyfill (pointer -> touch -->
+    <script src="https://igv.org/web/jb/release/current/touchpolyfill.min.js"></script>
+
+</head>
+
+<body style="margin:30px">
+
+    <h1 style="text-align: center; font:Helvetica Neue;font-size:36px;line-height: 40px; color: #333333
+    ">4D Loop Browser</h1>
+    <div>
+        <p class="legend"> We use loop resolution Hi-C to track the formation of loop domains across the genome
+           as cohesin is reintroduced. (Top Left) Contact map for 6hr auxin treated RAD21-mAC cells. (Top Right)
+           Contact map for RAD21-mAC cells with 6hr auxin treatment + 20 minute auxin withdrawal. (Middle Left)
+           Contact map for RAD21-mAC cells with 6hr auxin treatment + 40 minute auxin withdrawal. (Middle Right)
+           Contact map for RAD21-mAC cells with 6hr auxin treatment + 60 minute auxin withdrawal. (Bottom Left)
+           Contact map for RAD21-mAC cells with 6hr auxin treatment + 180 minute auxin withdrawal. (Bottom Right)
+       Contact map for untreated RAD21-mAC cells. </p> 
+    </div>
+    <br>
+    <div>
+        <p class="legend"> See our paper at <a href="http://www.cell.com/cell/abstract/S0092-8674(17)31120-0">Cell</a>!</p>
+    </div>
+    <div>
+        <p class="legend"> Suhas S.P. Rao, Su-Chen Huang, Brian Glenn St Hilaire, Jesse M. Engreitz, Elizabeth M. Perez, 
+        Kyong-Rim Kieffer-Kwon, Adrian L. Sanborn, Sarah E. Johnstone, Gavin D. Bascom, Ivan D. Bochkov, Xingfan Huang, 
+        Muhammad S. Shamim, Jaeweon Shin, Douglass Turner, Ziyi Ye, Arina D. Omer, James T. Robinson, Tamar Schlick, 
+        Bradley E. Bernstein, Rafael Casellas, Eric S. Lander, Erez Lieberman Aiden. (2017). Cohesin Loss Eliminates All Loop Domains. 
+        Cell 171, 305-320. </p>
+    </div>
+    <div>
+        <p class="legend"> Interactive version of our figures are available powered by <a href="aidenlab.org/juicebox">Juicebox Web</a>!</p>
+    </div>
+    <div>
+        <a href="http://www.cell.com/cell/9802-figure-2">Figure 2</a>
+    </div>
+    <div>
+        <a href="http://www.cell.com/cell/9802-figure-3">Figure 3</a>
+    </div>
+    <div>
+        <a href="http://www.cell.com/cell/9802-figure-4">Figure 4</a>
+    </div>
+    <div>
+        <a href="http://www.cell.com/cell/9802-figure-5">Figure 5</a>
+    </div>
+    <div>
+        <a href="http://www.cell.com/cell/9802-figure-6">Figure 6</a>
+    </div>
+    <div>
+        <a href="http://www.cell.com/cell/9802-figure-7">Figure 7</a>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div id="app-container-1">
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div id="app-container-2">
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div id="app-container-3">
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div id="app-container-4">
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div id="app-container-5">
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div id="app-container-6">
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <style type="text/css">
+
+   .row {
+    display: flex;
+}
+
+.legend {
+    text-align: left;
+    font: Helvetica Neue;
+    font-size: 36;
+    px color: #333333;
+}
+
+.col-md-2 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+</style>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var browser1, browser2, browser3, browser4, browser5, browser6;
+        var windowSize = 445;
+
+
+
+        hic.loadDataset({
+            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/treated_6hr/unsynchronized/combined.hic",
+            nvi: "33255540403,36479"
+        })
+        .then(function (dataset) {
+
+            browser1 = hic.createBrowser($('#app-container-1'), {
+                miniMode: true,
+                width: windowSize,
+                height: windowSize,
+                dataset: dataset,
+                href: "?state=8,8,7,13380,13380,4.88,KR&colorScale=116"
+            });
+            if (browser1 && browser2 && browser3 && browser4 && browser5 && browser6) hic.syncBrowsers([browser1, browser2, browser3, browser4, browser5, browser6]);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+        hic.loadDataset({
+            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/deep/20min_withdraw_combined.hic",
+            nvi: "11078436933,36479" 
+        })
+        .then(function (dataset) {
+            browser2 = hic.createBrowser($('#app-container-2'), {
+                miniMode: true,
+                width: windowSize,
+                height: windowSize,
+                dataset: dataset,
+                href: "?state=8,8,7,13380,13380,4.88,KR&colorScale=34"
+            });
+            if (browser1 && browser2 && browser3 && browser4 && browser5 && browser6) hic.syncBrowsers([browser1, browser2, browser3, browser4, browser5, browser6]);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+        
+        hic.loadDataset({
+            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/deep/40min_withdraw_combined.hic",
+            nvi: "11031830038,36479"
+        })
+        .then(function (dataset) {
+            browser3 = hic.createBrowser($('#app-container-3'), {
+                miniMode: true,
+                width: windowSize,
+                height: windowSize,
+                dataset: dataset,
+                href: "?state=8,8,7,13380,13380,4.88,KR&colorScale=33"
+            });
+            if (browser1 && browser2 && browser3 && browser4 && browser5 && browser6) hic.syncBrowsers([browser1, browser2, browser3, browser4, browser5, browser6]);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+        
+        hic.loadDataset({
+            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/deep/60min_withdraw_combined.hic",
+            nvi: "10312725340,36479" 
+        })
+        .then(function (dataset) {
+            browser4 = hic.createBrowser($('#app-container-4'), {
+                miniMode: true,
+                width: windowSize,
+                height: windowSize,
+                dataset: dataset,
+                href: "?state=8,8,7,13380,13380,4.88,KR&colorScale=31"
+            });
+            if (browser1 && browser2 && browser3 && browser4 && browser5 && browser6) hic.syncBrowsers([browser1, browser2, browser3, browser4, browser5, browser6]);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+        
+        hic.loadDataset({
+            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/time_course/deep/180min_withdraw_combined.hic",
+            nvi: "10038610214,36479" 
+        })
+        .then(function (dataset) {
+            browser5 = hic.createBrowser($('#app-container-5'), {
+                miniMode: true,
+                width: windowSize,
+                height: windowSize,
+                dataset: dataset,
+                href: "?state=8,8,7,13380,13380,4.88,KR&colorScale=34"
+            });
+            if (browser1 && browser2 && browser3 && browser4 && browser5 && browser6) hic.syncBrowsers([browser1, browser2, browser3, browser4, browser5, browser6]);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+        
+        hic.loadDataset({
+            url: "https://s3.amazonaws.com/hicfiles/hiseq/degron/untreated/unsynchronized/combined.hic",
+            nvi: "30439217680,36479" 
+        })
+        .then(function (dataset) {
+            browser6 = hic.createBrowser($('#app-container-6'), {
+                miniMode: true,
+                width: windowSize,
+                height: windowSize,
+                dataset: dataset,
+                href: "?state=8,8,7,13380,13380,4.88,KR&colorScale=120&name=Rao%20et%20al.%20%7C%20Biorxiv%202017%20Combined%20Untreated"
+            });
+            if (browser1 && browser2 && browser3 && browser4 && browser5 && browser6) hic.syncBrowsers([browser1, browser2, browser3, browser4, browser5, browser6]);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    });
+
+</script>
+
+</body>
+
+</html>
+
+
